@@ -10,11 +10,11 @@ const routes = [
     name: "Home",
     component: Home,
   },
-//   {
-//     path: "/cordings",
-//     name: "Cordings",
-//     component: () => import(/* webpackChunkName: "cordings" */ '../views/Cordings.vue')
-//   }
+  {
+    path: "/MyWorks",
+    name: "MyWorks",
+    component: () => import('../views/MyWorks.vue')
+  }
 ]
 
 const router = new VueRouter({
