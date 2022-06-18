@@ -6,8 +6,8 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
-
+    name: 'HomeView',
+    
     data: () => ({
       
     }),
