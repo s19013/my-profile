@@ -20,7 +20,7 @@ import dayjs from "dayjs";
     },
     props:['birthDay'],
     computed:{
-      age:function () {
+      age:function () { //年齢を計算する
         const dayjsBirthday = dayjs(`${this.birthDay.year}-${this.birthDay.month}-${this.birthDay.date}`)
         return this.today.diff(dayjsBirthday,'year')
       }
