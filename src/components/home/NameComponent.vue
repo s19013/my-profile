@@ -27,7 +27,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .myName{
     display: grid;
     grid-template-columns: 50% 50%;
