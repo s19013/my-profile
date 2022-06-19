@@ -30,6 +30,7 @@ export default {
 <style lang="scss">
 .main{
   background-color: #f3f9fc;
+  color:#0a192b;
 }
-  
+
 </style>
