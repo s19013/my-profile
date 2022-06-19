@@ -4,9 +4,11 @@
       <menu-list></menu-list>
     </v-system-bar>
 
-    <v-container>
-      <router-view></router-view>
-    </v-container>
+    <div class="main">
+      <v-container>
+        <router-view></router-view>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -25,3 +27,9 @@ export default {
   }),
 };
 </script>
+<style lang="scss">
+.main{
+  background-color: #f3f9fc;
+}
+  
+</style>
