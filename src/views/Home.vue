@@ -1,11 +1,12 @@
 <template>
   <div>
+    <p class="lastUpdated">2022/6/19</p>
     <name-component :name="homeData.name"></name-component>
     <date-of-birth-component :birthDay="homeData.birthDay"></date-of-birth-component>
     <link-component :linkList="homeData.linkList"> </link-component>
-<!-- 学歴､職歴 -->
+    <!-- 学歴､職歴 -->
     <history-component :list="homeData.careerList" detailName="学歴 職歴"></history-component>
-<!-- 資格名 -->
+    <!-- 資格名 -->
     <history-component :list="homeData.qualificationList" detailName="資格名"></history-component>
     
   </div>
@@ -39,6 +40,6 @@ import  {HomeData}  from "../datas/HomeData.js";
 </script>
 
 <style lang="scss">
-  
+  .lastUpdated{font-size:2vmin ;}
 </style>
 
