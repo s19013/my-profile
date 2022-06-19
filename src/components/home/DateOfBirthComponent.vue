@@ -15,7 +15,7 @@ import dayjs from "dayjs";
     name: 'DateOfBirthComponent',
     data() {
       return {
-        today:dayjs()
+        today:dayjs() //今日の日付
       }
     },
     props:['birthDay'],
