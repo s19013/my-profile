@@ -11,5 +11,12 @@ export class HomeData{
             month:5,
             date :22
         }
+        this.linkList = [
+            {
+                icon :null,
+                title:'Github',
+                url  :'https://github.com/s19013/',
+            },
+        ]
     }
 }
