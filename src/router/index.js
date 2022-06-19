@@ -25,14 +25,14 @@ const routes = [
     ]
   },
   {
-    path: "/MyWorks",
-    name: "MyWorks",
-    component: () => import('../views/MyWorks/MyWorks.vue')
+    path: "/FQA",
+    name: "FQA",
+    component: () => import('../views/FQA.vue')
   },
   {
-    path: "/MyWorks",
-    name: "MyWorks",
-    component: () => import('../views/MyWorks/MyWorks.vue')
+    path: "/Hobby",
+    name: "Hobby",
+    component: () => import('../views/Hobby.vue')
   },
 
 ]
