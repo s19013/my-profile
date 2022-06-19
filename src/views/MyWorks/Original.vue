@@ -1,12 +1,13 @@
 <template>
-  <div>
-    
+  <div >
+    original
+    original
   </div>
 </template>
 
 <script>
   export default {
-    name: 'HomeView',
+    name: 'MyWorks-OriginalView',
     data() {
       return {
         
@@ -14,3 +15,7 @@
     },
   }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

@@ -1,6 +1,8 @@
 <template>
   <div>
-    
+    <router-link to="Original">オリジナル</router-link>
+    <router-link to="Samples">サンプル</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
