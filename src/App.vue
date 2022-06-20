@@ -37,6 +37,7 @@ export default {
   color:#0a192b;
 }
 header{
+  background-color:#d5e1e9 ;
   display: flex;
 }
 
