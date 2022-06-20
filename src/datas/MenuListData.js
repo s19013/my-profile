@@ -2,11 +2,11 @@ export class MenuListData{
     constructor() {
         this.AppList = [
             {
-                to   :"/",
+                to   :"/Home",
                 title:"基本情報"
             },
             {
-                to   :"/MyWorks/Original",
+                to   :"/MyWorks",
                 title:"作品"
             },
             {
