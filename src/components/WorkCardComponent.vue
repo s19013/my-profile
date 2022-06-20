@@ -101,14 +101,14 @@
 @media (min-width: 451px) and (max-width :950px){
   .workCard{
     width:44vw;
-    margin: 2vmin;
+    margin: 2vh 2vw;
   }
 }
 
 @media (min-width :951px){
   .workCard{
     width:25vw;
-    margin: 3vmin;
+    margin: 3vh vw;
   }
 }
 .photo{
