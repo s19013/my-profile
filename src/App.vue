@@ -17,7 +17,6 @@ import MenuList  from "./components/MenuList.vue";
 
 export default {
   name: 'App',
-
   components: {
     MenuList
   },
@@ -29,7 +28,7 @@ export default {
 </script>
 <style lang="scss">
 .main{
-  background-color: #f3f9fc;
+  background-color: #ebeef0;
   color:#0a192b;
 }
 
