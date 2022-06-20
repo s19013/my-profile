@@ -44,7 +44,7 @@ a{
 }
 .router-link-exact-active{
   background-color:#112d4e;
-  color: #ebeef0;
+  color: #f9f7f7;
   font-weight: bold;
 }
 </style>
