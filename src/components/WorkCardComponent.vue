@@ -5,28 +5,39 @@
     <!-- 写真 -->
     <div class="photo">
         <v-img
-            v-if="work.img == null"
+            v-if="work.imgUrl == null"
             src="@/assets/img/no_image.jpg"
             >
         </v-img>
         <!--  -->
-        <!-- <v-img
+        <v-img
           v-else
-          :src="work.img"
-        ></v-img> -->
+          :src="imgSrc"
+        ></v-img>
     </div>
+    <!-- -->
 
     <v-card-title class="title">
       {{work.title}}
     </v-card-title>
 
-    <v-card-text v-if="work.codeUrl !== null">
-        <a :href="work.codeUrl">コードを見る</a>
-    </v-card-text>
+    <!-- 作品 -->
+    <div class="text" v-if="work.workUrl !== null">
+      <a :href="work.workUrl">作品</a>
+      <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
+    </div>
 
-    <v-card-text v-if="work.workUrl !== null">
-        <a :href="work.workUrl">作品を見る</a>
-    </v-card-text>
+    <!-- readme -->
+    <div class="text" v-if="work.readmeUrl !== null">
+        <a :href="work.readmeUrl">readme</a>
+        <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
+    </div>
+
+    <!-- コード -->
+    <div class="text" v-if="work.readmeUrl !== null">
+        <a :href="work.codeUrl">コード</a>
+        <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
+    </div>
 
       <div v-if="work.comment !== null">
         <v-card-actions>
@@ -70,29 +81,44 @@
             show: false,
         }
     },
-    props:['work']
+    props:['work'],
+    computed:{
+      imgSrc(){
+        return require("@/assets/img/" + this.work.imgUrl)
+      }
+    }
   }
 </script>
 
 <style lang="scss" scoped>
 @media (max-width: 450px) {
   .workCard{
-    max-width:100vmin;
-    margin: 5vmin 0;
+    width:94vw;
+    margin: 5vh 0;
   }
 }
 
 @media (min-width: 451px) and (max-width :950px){
   .workCard{
-    max-width:44vmin;
+    width:44vw;
     margin: 2vmin;
   }
 }
 
 @media (min-width :951px){
   .workCard{
-    max-width:99vmin;
-    margin: 4vmin;
+    width:25vw;
+    margin: 3vmin;
   }
 }
+.photo{
+  width :100%;
+  height:250px;
+  border-bottom: 1px solid black;
+}
+
+.text{
+  padding: 8px;
+}
+
 </style>
