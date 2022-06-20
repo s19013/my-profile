@@ -41,11 +41,11 @@ import { MyWorksOriginalWorks } from "@/datas/MyWorksOriginalWorks.js";
   }
 }
 .heading{
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   margin: 2vh 0;
-  background-color: #dbe2ef;
   p{
     margin: 0 2vw;
   }
 }
 </style>
+<!-- background-color: #dbe2ef; -->
