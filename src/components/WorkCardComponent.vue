@@ -118,7 +118,12 @@
 }
 
 .text{
-  padding: 8px;
+  padding: 1vh 1vw;
+}
+
+a{
+  color: black;
+  text-decoration: none;
 }
 
 </style>
