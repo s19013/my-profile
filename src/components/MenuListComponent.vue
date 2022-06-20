@@ -30,7 +30,7 @@
 
 <style lang="scss" scoped>
 .menu{
-  margin: 0 auto;
+  margin: auto;
   display: flex;
 }
 .router-link {
