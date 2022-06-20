@@ -18,7 +18,7 @@ export class MenuListData{
                 title:"趣味"
             }
         ]
-        this.AppListFontSize = "5vmin"
+        this.AppListFontSize = "2vw"
         //-----------------------------
         this.MyWorksList = [
             {
@@ -30,6 +30,6 @@ export class MenuListData{
                 title:"サンプル"
             }
         ]
-        this.MyWorksListFontSize = "3vmin"
+        this.MyWorksListFontSize = "1vw"
     }
 }
