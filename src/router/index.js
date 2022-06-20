@@ -38,7 +38,10 @@ const routes = [
     name: "Hobby",
     component: () => import('../views/Hobby.vue')
   },
-
+  {
+    path: '/:catchAll(.*)',
+    redirect:'/Home'
+  }
 ]
 
 const router = new VueRouter({
