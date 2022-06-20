@@ -108,7 +108,7 @@
 @media (min-width :951px){
   .workCard{
     width:25vw;
-    margin: 3vh vw;
+    margin: 3vh 1vw;
   }
 }
 .photo{
@@ -118,7 +118,7 @@
 }
 
 .text{
-  padding: 1vh 1vw;
+  padding: 1vh 16px;
 }
 
 a{
