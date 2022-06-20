@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-system-bar>
+    <header>
       <menu-list-component
         :list="menuList.AppList"
         :fontSize="menuList.AppListFontSize"
       ></menu-list-component>
-    </v-system-bar>
+    </header>
 
     <div class="main">
       <v-container>
@@ -35,6 +35,9 @@ export default {
 .main{
   background-color: #ebeef0;
   color:#0a192b;
+}
+header{
+  display: flex;
 }
 
 </style>
