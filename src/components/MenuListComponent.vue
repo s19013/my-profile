@@ -37,4 +37,14 @@
     margin:0 2vmin;
     font-size:var(--font-size);
 }
+a{
+  padding: 0 1vw;
+  color: black;
+  text-decoration: none;
+}
+.router-link-exact-active{
+  background-color:#112d4e;
+  color: #ebeef0;
+  font-weight: bold;
+}
 </style>
