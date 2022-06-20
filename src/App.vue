@@ -1,7 +1,10 @@
 <template>
   <div>
     <v-system-bar>
-      <menu-list></menu-list>
+      <menu-list-component
+        :list="menuList.AppList"
+        :fontSize="menuList.AppListFontSize"
+      ></menu-list-component>
     </v-system-bar>
 
     <div class="main">
@@ -13,17 +16,19 @@
 </template>
 
 <script>
-import MenuList  from "./components/MenuList.vue";
+import MenuListComponent  from "./components/MenuListComponent.vue";
+import { MenuListData } from "./datas/MenuListData";
 
 export default {
   name: 'App',
   components: {
-    MenuList
+    MenuListComponent
   },
-
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      menuList:new MenuListData
+    }
+  },
 };
 </script>
 <style lang="scss">
