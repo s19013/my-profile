@@ -34,5 +34,11 @@
     grid-template-rows: 50% 50%;
     .familyName{text-align: center;}
     .secondName{text-align: center;}
+    h2{
+      font-size:3vw
+    }
+    h5{
+      font-size:1vw
+    }
   }
 </style>
