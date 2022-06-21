@@ -40,20 +40,12 @@
     </div>
 
       <div v-if="work.comment !== null">
-        <v-card-actions>
-          <v-btn
-            color="orange lighten-2"
-            text
-          >
-            コメントを見る
-          </v-btn>
+        <v-card-actions @click="show = !show">
+          <p>コメントを見る</p>
 
           <v-spacer></v-spacer>
 
-          <v-btn
-            icon
-            @click="show = !show"
-          >
+          <v-btn icon>
             <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
           </v-btn>
         </v-card-actions>
