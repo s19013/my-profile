@@ -35,10 +35,10 @@
     .familyName{text-align: center;}
     .secondName{text-align: center;}
     h2{
-      font-size:3vw
+      font-size:200%
     }
     h5{
-      font-size:1vw
+      font-size:80%
     }
   }
 </style>
