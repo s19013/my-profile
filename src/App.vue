@@ -1,8 +1,11 @@
 <template>
   <div>
-    <v-system-bar>
-      <menu-list></menu-list>
-    </v-system-bar>
+    <header>
+      <menu-list-component
+        :list="menuList.AppList"
+        :fontSize="menuList.AppListFontSize"
+      ></menu-list-component>
+    </header>
 
     <div class="main">
       <v-container>
@@ -13,23 +16,29 @@
 </template>
 
 <script>
-import MenuList  from "./components/MenuList.vue";
+import MenuListComponent  from "./components/MenuListComponent.vue";
+import { MenuListData } from "./datas/MenuListData";
 
 export default {
   name: 'App',
   components: {
-    MenuList
+    MenuListComponent
   },
-
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      menuList:new MenuListData
+    }
+  },
 };
 </script>
 <style lang="scss">
 .main{
   background-color: #ebeef0;
   color:#0a192b;
+}
+header{
+  background-color:#d5e1e9 ;
+  display: flex;
 }
 
 </style>

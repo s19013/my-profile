@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
+    path: "/Home",
     name: "Home",
     component: Home,
   },
@@ -21,7 +21,11 @@ const routes = [
         {
             path:'Samples',
             component: () => import('../views/MyWorks/Samples.vue')
-        }
+        },
+        {
+          path:'',
+          redirect:'/MyWorks/Original'
+        },
     ]
   },
   {
@@ -34,7 +38,10 @@ const routes = [
     name: "Hobby",
     component: () => import('../views/Hobby.vue')
   },
-
+  {
+    path: '/:catchAll(.*)',
+    redirect:'/Home'
+  }
 ]
 
 const router = new VueRouter({
