@@ -27,7 +27,7 @@ import { MenuListData } from "@/datas/MenuListData";
 </script>
 
 <style lang="scss" scoped>
-.menu{
-  margin: 0 auto
-}
+// .menu{
+//   margin: 0 auto
+// }
 </style>
