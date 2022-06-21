@@ -30,25 +30,32 @@
 <style lang="scss" scoped>
 // @import "../../assets/scss/_mixin.scss";
 // @include historyTable
+
 table {
     width: 100%;
     border-spacing: 0;
+    margin: 0 auto;
     .year {width :12%}
     .month{width :8%}
     .Heading{
       background-color: #3f72af;
       color: #f9f7f7;
-      font-size: 5vmin;
+      font-size: 1.4vw;
     }
     th, td {
       border: 1px solid #4f4d47;
       text-align: center;
-      padding: 2vmin;
+      padding: 5px 0;
       p{
-        font-size: 4vmin;
+        font-size: 1.2vw;
         overflow-wrap: normal;
         font-weight: normal;
       }
     }
   }
+@media  (min-width :951px) {
+  table {
+    width:95%
+  }
+}
 </style>

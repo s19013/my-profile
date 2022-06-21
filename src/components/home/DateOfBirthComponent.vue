@@ -1,10 +1,13 @@
 <template>
   <div>
+    <p>生年月日</p>
     <div class="birthDay">
-      {{birthDay.year }}年
-      {{birthDay.month}}月
-      {{birthDay.date }}日
-      {{age}}歳
+      <p>
+        {{birthDay.year }}年
+        {{birthDay.month}}月
+        {{birthDay.date }}日
+        {{age}}歳
+      </p>
     </div>
   </div>
 </template>
@@ -30,6 +33,11 @@ import dayjs from "dayjs";
 
 <style lang="scss" scoped>
 .birthDay{
-  text-align: center;
+  // text-align: center;
+  p{
+    font-size:150%;
+    margin: 5px 0 5px 10px;
+  }
 }
+
 </style>

@@ -1,6 +1,7 @@
 <!-- リンクをforをつかってまとめて表示 -->
 <template>
   <div>
+    <p>リンク</p>
     <ul>
       <li v-for="link of linkList" :key="link.title" >
         <a :href="link.url">
@@ -24,5 +25,7 @@
 </script>
 
 <style lang="scss" scoped>
-  li{list-style-type: none;}
+  li{
+    margin: 5px 0 5px 25px;
+  }
 </style>

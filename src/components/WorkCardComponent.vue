@@ -40,20 +40,12 @@
     </div>
 
       <div v-if="work.comment !== null">
-        <v-card-actions>
-          <v-btn
-            color="orange lighten-2"
-            text
-          >
-            コメントを見る
-          </v-btn>
+        <v-card-actions @click="show = !show">
+          <p>コメントを見る</p>
 
           <v-spacer></v-spacer>
 
-          <v-btn
-            icon
-            @click="show = !show"
-          >
+          <v-btn icon>
             <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
           </v-btn>
         </v-card-actions>
@@ -91,26 +83,6 @@
 </script>
 
 <style lang="scss" scoped>
-@media (max-width: 450px) {
-  .workCard{
-    width:94vw;
-    margin: 5vh 0;
-  }
-}
-
-@media (min-width: 451px) and (max-width :950px){
-  .workCard{
-    width:44vw;
-    margin: 2vh 2vw;
-  }
-}
-
-@media (min-width :951px){
-  .workCard{
-    width:25vw;
-    margin: 3vh 1vw;
-  }
-}
 .photo{
   width :100%;
   height:250px;
@@ -126,4 +98,26 @@ a{
   text-decoration: none;
 }
 
+
+
+@media (min-width :951px){
+  .workCard{
+    width:25vw;
+    margin: 3vh 1vw;
+  }
+}
+
+@media (min-width: 451px) and (max-width :950px){
+  .workCard{
+    width:44vw;
+    margin: 2vh 2vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .workCard{
+    width:94vw;
+    margin: 5vh 0;
+  }
+}
 </style>
