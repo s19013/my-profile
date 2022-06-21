@@ -33,9 +33,10 @@ import dayjs from "dayjs";
 
 <style lang="scss" scoped>
 .birthDay{
-  text-align: center;
+  // text-align: center;
   p{
-    font-size:150%
+    font-size:150%;
+    margin: 5px 1vw;
   }
 }
 
