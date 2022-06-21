@@ -18,7 +18,7 @@
     <!-- -->
 
     <v-card-title class="title">
-      {{work.title}}
+      <b>{{work.title}}</b>
     </v-card-title>
 
     <!-- 作品 -->
@@ -83,6 +83,9 @@
 </script>
 
 <style lang="scss" scoped>
+.title{
+  word-break:break-word
+}
 .photo{
   width :100%;
   height:250px;
