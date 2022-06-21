@@ -26,6 +26,6 @@
 
 <style lang="scss" scoped>
   li{
-    margin: 5px 2vw;
+    margin: 5px 0 5px 25px;
   }
 </style>

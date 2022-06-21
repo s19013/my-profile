@@ -36,7 +36,7 @@ import dayjs from "dayjs";
   // text-align: center;
   p{
     font-size:150%;
-    margin: 5px 1vw;
+    margin: 5px 0 5px 10px;
   }
 }
 
