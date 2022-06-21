@@ -35,7 +35,7 @@ import dayjs from "dayjs";
 .birthDay{
   text-align: center;
   p{
-    font-size:2vw
+    font-size:150%
   }
 }
 
