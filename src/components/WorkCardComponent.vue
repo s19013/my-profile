@@ -18,7 +18,7 @@
     <!-- -->
 
     <v-card-title class="title">
-      {{work.title}}
+      <b>{{work.title}}</b>
     </v-card-title>
 
     <!-- 作品 -->
@@ -83,6 +83,9 @@
 </script>
 
 <style lang="scss" scoped>
+.title{
+  word-break:break-word
+}
 .photo{
   width :100%;
   height:250px;
@@ -98,8 +101,6 @@ a{
   text-decoration: none;
 }
 
-
-
 @media (min-width :951px){
   .workCard{
     width:25vw;
@@ -109,14 +110,14 @@ a{
 
 @media (min-width: 451px) and (max-width :950px){
   .workCard{
-    width:44vw;
+    width:42vw;
     margin: 2vh 2vw;
   }
 }
 
 @media (max-width: 450px) {
   .workCard{
-    width:94vw;
+    width:100%;
     margin: 5vh 0;
   }
 }
