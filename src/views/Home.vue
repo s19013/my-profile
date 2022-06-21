@@ -19,7 +19,9 @@
       <div @click="showCareerList = !showCareerList">
         学歴､職歴
         <v-btn icon>
-          <v-icon>{{ showCareerList ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+          <v-icon>
+            {{ showCareerList ? 'mdi-chevron-up' : 'mdi-chevron-down' }}
+          </v-icon>
         </v-btn>
       </div>
 
