@@ -55,7 +55,7 @@ table {
   }
 @media  (min-width :951px) {
   table {
-    width:90%
+    width:95%
   }
 }
 </style>
