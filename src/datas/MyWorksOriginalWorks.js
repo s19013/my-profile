@@ -1,12 +1,3 @@
-// class baseData{
-//     constructor(imgUrl,title,codeUrl,workUrl,comment) {
-//         this.imgUrl = imgUrl
-//         this.title = title
-//         this.codeUrl = codeUrl
-//         this.workUrl = workUrl
-//         this.comment = comment
-//     }
-// }
 export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
