@@ -3,19 +3,24 @@ export class MenuListData{
         this.AppList = [
             {
                 to   :"/Home",
-                title:"基本情報"
+                title:"基本情報",
+                icon :"fa-solid fa-address-card",
             },
             {
                 to   :"/MyWorks",
-                title:"作品"
+                title:"作品",
+                icon :"fa-solid fa-code",
             },
             {
                 to   :"/FQA",
-                title:"よくある質問"
+                title:"よくある質問",
+                icon :"fa-solid fa-circle-question",
+                activeicon:"fa-solid fa-circle-question"
             },
             {
                 to   :"/Hobby",
-                title:"趣味"
+                title:"趣味",
+                icon :"fa-gamepad",
             }
         ]
         this.AppListFontSize = "2vw"
