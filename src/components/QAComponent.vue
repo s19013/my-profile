@@ -47,7 +47,10 @@ import { marked } from 'marked'
             font-weight: bold;
             color: aliceblue;
         }
-        p{ padding: 0 0 0 10px;}
+        p{
+            padding: 0 0 0 10px;
+            font-weight: 550;
+        }
     }
     .answer{
         p { margin: 0 0 0 30px; }
