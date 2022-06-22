@@ -20,6 +20,11 @@ export class HomeData{
                 title:'Github',
                 url  :'https://github.com/s19013/',
             },
+            {
+                icon :null,
+                title:'connpass',
+                url  :'https://connpass.com/user/hideya0522/',
+            },
         ]
         // 職歴,学歴
         this.careerList = [
