@@ -21,6 +21,7 @@ export class QAData{
 * 電気工作
 * テスト
 * CI/CD
+* デザイン
                 `
             },
             {
