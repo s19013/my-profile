@@ -84,7 +84,8 @@
 
 <style lang="scss" scoped>
 .title{
-  word-break:break-word
+  word-break:break-word;
+  font-size:150%
 }
 .photo{
   width :100%;
