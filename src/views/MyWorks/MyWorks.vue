@@ -29,7 +29,8 @@ import { MenuListData } from "@/datas/MenuListData";
 
 <style lang="scss" scoped>
 .menuComponent{
-   display: flex;
+  display: flex;
   justify-content: center;
+  padding: 1vh 0 0 0;
 }
 </style>
