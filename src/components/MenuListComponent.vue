@@ -6,6 +6,7 @@
       :style="size"
       >
         {{element.title}}
+        <font-awesome-icon :icon="element.icon" v-if="element.icon"/>
       </router-link>
     </div>
   </div>
