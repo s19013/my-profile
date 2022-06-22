@@ -35,6 +35,6 @@ export class MenuListData{
                 title:"サンプル"
             }
         ]
-        this.MyWorksListFontSize = "1vw"
+        this.MyWorksListFontSize = "1.4vw"
     }
 }

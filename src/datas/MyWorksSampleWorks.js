@@ -1,56 +1,23 @@
-// class baseData{
-//     constructor(imgUrl,title,codeUrl,workUrl,comment) {
-//         this.imgUrl = imgUrl
-//         this.title = title
-//         this.codeUrl = codeUrl
-//         this.workUrl = workUrl
-//         this.comment = comment
-//     }
-// }
 export class MyWorksSampleWorks{
     constructor() {
         this.works = [
             {
                 imgUrl:null,
-                title:"Knowledge Sharing Board",
-                codeUrl:"https://github.com/s19013/knowledge-sharing-board",
-                workUrl:"http://knowledge-sharing-board.link/",
-                comment:"laravelの練習として作りました",
+                title:"vue-todo",
+                readmeUrl:null,
+                codeUrl:"https://github.com/s19013/vue-todo2",
+                workUrl:"https://s19013.github.io/vue-todo2/",
+                comment:"保存機能はついていません",
             },
             {
                 imgUrl:null,
-                title:"",
+                title:"vue-carousel-sample",
+                readmeUrl:null,
                 codeUrl:null,
-                workUrl:null,
-                comment:null,
-            },
-            {
-                imgUrl:null,
-                title:"",
-                codeUrl:null,
-                workUrl:null,
-                comment:null,
-            },
-            {
-                imgUrl:null,
-                title:"",
-                codeUrl:null,
-                workUrl:null,
-                comment:null,
-            },
-            {
-                imgUrl:null,
-                title:"",
-                codeUrl:null,
-                workUrl:null,
-                comment:null,
-            },
-            {
-                imgUrl:null,
-                title:"",
-                codeUrl:null,
-                workUrl:null,
-                comment:null,
+                workUrl:"https://s19013.github.io/vue-carousel-sample/",
+                comment:`
+スライドショー
+                `,
             },
         ]
     }
