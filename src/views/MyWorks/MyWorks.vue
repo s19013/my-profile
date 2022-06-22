@@ -1,6 +1,7 @@
 <template>
   <div>
     <menu-list-component
+      class = "menuComponent"
       :list="menuList.MyWorksList"
       :fontSize="menuList.MyWorksListFontSize"
     ></menu-list-component>
@@ -27,7 +28,8 @@ import { MenuListData } from "@/datas/MenuListData";
 </script>
 
 <style lang="scss" scoped>
-// .menu{
-//   margin: 0 auto
-// }
+.menuComponent{
+   display: flex;
+  justify-content: center;
+}
 </style>
