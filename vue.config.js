@@ -4,6 +4,6 @@ module.exports = defineConfig({
     'vuetify'
   ],
   outputDir : 'docs',
-  publicPath: '/my-profile',
-  // publicPath: '/'
+  // publicPath: '/my-profile',
+  publicPath: '/'
 })
