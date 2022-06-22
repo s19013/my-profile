@@ -55,7 +55,9 @@
             <v-divider></v-divider>
 
             <v-card-text class="comments">
-              {{work.comment}}
+              <div v-html="markdownText"></div>
+              <!-- {{markdownText}} -->
+              <!-- {{work.comment.trim()}} -->
             </v-card-text>
           </div>
         </v-expand-transition>
@@ -66,11 +68,13 @@
 </template>
 
 <script>
+import { marked } from 'marked'
   export default {
     name: 'WorkCardComponent',
     data() {
         return {
             show: false,
+            markdownText:marked.parse(this.work.comment)
         }
     },
     props:['work'],
@@ -78,7 +82,10 @@
       imgSrc(){
         return require("@/assets/img/" + this.work.imgUrl)
       }
-    }
+    },
+    // mounted() {
+    //   console.log(this.markdownText);
+    // },
   }
 </script>
 
@@ -89,7 +96,7 @@
 }
 .photo{
   width :100%;
-  height:250px;
+  height:240px;
   border-bottom: 1px solid black;
 }
 
