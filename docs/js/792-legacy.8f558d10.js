@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmy_profile"]=self["webpackChunkmy_profile"]||[]).push([[792],{5792:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var r=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div")},u=[],f={name:"HobbyView",data:function(){return{}}},l=f,c=t(1001),i=(0,c.Z)(l,r,u,!1,null,"5fc8d4d2",null),a=i.exports}}]);
+//# sourceMappingURL=792-legacy.8f558d10.js.map
