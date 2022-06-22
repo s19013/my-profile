@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="FQA">
         <div @click="show = !show">
             <div class="question">
                 <div class="markQ">Q</div>
@@ -35,40 +35,30 @@ import { marked } from 'marked'
 </script>
 
 <style lang="scss">
-.question{
-    display: flex;
-    margin: 10px 0;
-    .btn{
-        height: 40%;
-    //   margin:auto
-    //  display: flex;
-    //  justify-content: flex-end;
+.FQA{
+    background-color:  #f5f5f5;;
+    .question{
+        display: flex;
+        margin: 10px 0;
+        .btn{ height: 40%; }
+        .markQ{
+            padding:1px 5px;
+            background-color: rgb(0, 191, 255);
+            font-weight: bold;
+            color: aliceblue;
+        }
+        p{ padding: 0 0 0 10px;}
     }
-    .markQ{
-        padding:1px 5px;
-        background-color: rgb(0, 191, 255);
-        font-weight: bold;
-        color: aliceblue;
-    }
-    p{
-        padding: 0 0 0 10px;
+    .answer{
+        p { margin: 0 0 0 30px; }
+        li{ margin: 0 0 0 40px; }
+        .markA{
+            width: 22px;
+            padding:1px 5px;
+            background-color: rgb(255, 72, 0);
+            font-weight: bold;
+            color: aliceblue;
+        }
     }
 }
-.answer{
-    // margin: 0 0 0 10px;
-    p{
-        margin: 0 0 0 30px;
-    }
-    li{
-        margin: 0 0 0 40px;
-    }
-    .markA{
-        width: 22px;
-        padding:1px 5px;
-        background-color: rgb(255, 72, 0);
-        font-weight: bold;
-        color: aliceblue;
-    }
-  }
-  
 </style>
