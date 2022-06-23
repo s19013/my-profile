@@ -28,7 +28,7 @@ laravelの練習として作りました
                 imgUrl:"originalWorks/blackJack.png",
                 title :"ブラックジャック",
                 readmeUrl:"https://github.com/s19013/web-blackjack-vue",
-                codeUrl:"https://github.com/s19013/web-blackjack-vue/src",
+                codeUrl:"https://github.com/s19013/web-blackjack-vue/",
                 workUrl:"https://s19013.github.io/web-blackjack-vue/",
                 used:["javascript","Vue.js","html","css"],
                 comment:`
@@ -39,7 +39,7 @@ vueの練習として作りました`
                 title :"自己紹介サイト",
                 readmeUrl:"https://github.com/s19013/my-profile",
                 codeUrl:"https://github.com/s19013/my-profile",
-                workUrl:"https://s19013.github.io/web-blackjack-vue/src",
+                workUrl:"https://s19013.github.io/my-profile/Home",
                 used:["javascript","Vue.js","html","css"],
                 comment:`
 このサイトです｡  
