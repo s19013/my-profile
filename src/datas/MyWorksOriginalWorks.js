@@ -11,7 +11,9 @@ export class MyWorksOriginalWorks{
                 used:["php","laravel","javascript","html","css"],
                 comment:`
 laravelの練習として作りました  
-今後vueと組み合わせる予定です｡`
+今後vueと組み合わせる予定です｡  
+[発表資料](https://docs.google.com/presentation/d/e/2PACX-1vTcFdwzqewHn7cVl-8MFKz8zTfPLaHjQlrhoJ40r9U-xL8dYW1DoHz0v8SkOTZ8EiVAB9VEaGhvj4jp/pub?start=false&loop=false&delayms=3000&slide=id.p)
+`
                 }),
             new baseWorkData({
                 imgUrl:"originalWorks/gobblet.png",
@@ -22,7 +24,9 @@ laravelの練習として作りました
                 used:["kotlin","androidstudio"],
                 comment:`
 学校の卒業の制作物として作りました  
-コンピューターを作ったみたかったのでコンピューターのアルゴリズムを作りました｡`
+コンピューターを作ったみたかったのでコンピューターのアルゴリズムを作りました｡  
+[アルゴリズムのスライド](https://speakerdeck.com/s19013/goburetuto-fa-biao-suraido)
+`
                 }),
             new baseWorkData({
                 imgUrl:"originalWorks/blackJack.png",
