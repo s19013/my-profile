@@ -1,7 +1,8 @@
+import { baseWorkData } from "./baseWorkData";
 export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
-            {
+            new baseWorkData({
                 imgUrl:"originalWorks/knowledge-sharing-bord.png",
                 title :"Knowledge Sharing Board",
                 readmeUrl:"https://github.com/s19013/knowledge-sharing-board",
@@ -9,9 +10,9 @@ export class MyWorksOriginalWorks{
                 workUrl:"http://knowledge-sharing-board.link/",
                 comment:`
 laravelの練習として作りました  
-今後vueと組み合わせる予定です｡`,
-            },
-            {
+今後vueと組み合わせる予定です｡`
+                }),
+            new baseWorkData({
                 imgUrl:"originalWorks/gobblet.png",
                 title :"ゴブレット",
                 readmeUrl:"https://github.com/s19013/GraduationTasks",
@@ -19,20 +20,18 @@ laravelの練習として作りました
                 workUrl:"https://play.google.com/store/apps/details?id=com.game.gobblet5&hl=ja&gl=US",
                 comment:`
 学校の卒業の制作物として作りました  
-コンピューターのアルゴリズムを作りました
-                `,
-            },
-            {
+コンピューターのアルゴリズムを作りました`
+                }),
+            new baseWorkData({
                 imgUrl:"originalWorks/blackJack.png",
                 title :"ブラックジャック",
                 readmeUrl:"https://github.com/s19013/web-blackjack-vue",
                 codeUrl:"https://github.com/s19013/web-blackjack-vue/src",
                 workUrl:"https://s19013.github.io/web-blackjack-vue/",
                 comment:`
-vueの練習として作りました
-                `,
-            },
-            {
+vueの練習として作りました`
+                }),
+            new baseWorkData({
                 imgUrl:"originalWorks/my-profile.png",
                 title :"自己紹介サイト",
                 readmeUrl:"https://github.com/s19013/my-profile",
@@ -40,10 +39,8 @@ vueの練習として作りました
                 workUrl:"https://s19013.github.io/web-blackjack-vue/src",
                 comment:`
 このサイトです｡  
-vue Routerの練習と自己開示のためにつくりました
-                `,
-            },
-
+vue Routerの練習と自己開示のためにつくりました`
+                }),
         ]
     }
 }
