@@ -4,7 +4,7 @@
     <p>リンク</p>
     <ul>
       <li v-for="link of linkList" :key="link.title" >
-        <a :href="link.url">
+        <a :href="link.url"  target="_blank" rel="noopener noreferrer">
           <p>{{link.title}}</p>
         </a>
       </li>

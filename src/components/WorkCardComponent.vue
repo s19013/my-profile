@@ -23,19 +23,19 @@
 
     <!-- 作品 -->
     <div class="text" v-if="work.workUrl !== null">
-      <a :href="work.workUrl">作品</a>
+      <a :href="work.workUrl"  target="_blank" rel="noopener noreferrer">作品</a>
       <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
 
     <!-- readme -->
     <div class="text" v-if="work.readmeUrl !== null">
-        <a :href="work.readmeUrl">readme</a>
+        <a :href="work.readmeUrl"  target="_blank" rel="noopener noreferrer">readme</a>
         <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
 
     <!-- コード -->
     <div class="text" v-if="work.readmeUrl !== null">
-        <a :href="work.codeUrl">コード</a>
+        <a :href="work.codeUrl"  target="_blank" rel="noopener noreferrer">コード</a>
         <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
 
