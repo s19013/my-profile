@@ -140,7 +140,6 @@ ul{
   margin:0 0 0 5%;
 }
 li{
-  font-size: 100%;
-  // margin: 0,0,0,10px;
+  font-size: 80%;
 }
 </style>
