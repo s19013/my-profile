@@ -34,7 +34,7 @@
     </div>
 
     <!-- コード -->
-    <div class="text" v-if="work.readmeUrl !== null">
+    <div class="text" v-if="work.codeUrl !== null">
         <a :href="work.codeUrl"  target="_blank" rel="noopener noreferrer">コード</a>
         <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
