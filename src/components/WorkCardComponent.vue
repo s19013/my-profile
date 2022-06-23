@@ -39,6 +39,16 @@
         <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
 
+    <!-- 使用した言語など -->
+    <div class="text" v-if="work.used !== null">
+        <p>使用したフレームワークなど</p>
+        <ul>
+          <li v-for="(element,index) of work.used" :key="index">
+            {{element}}
+          </li>
+        </ul>
+    </div>
+
       <div v-if="work.comment !== null">
         <v-card-actions @click="show = !show">
           <p>コメントを見る</p>
@@ -83,32 +93,10 @@ import { marked } from 'marked'
         return require("@/assets/img/" + this.work.imgUrl)
       }
     },
-    // mounted() {
-    //   console.log(this.markdownText);
-    // },
   }
 </script>
 
 <style lang="scss" scoped>
-.title{
-  word-break:break-word;
-  font-size:150%
-}
-.photo{
-  width :100%;
-  height:240px;
-  border-bottom: 1px solid black;
-}
-
-.text{
-  padding: 1vh 16px;
-}
-
-a{
-  color: black;
-  text-decoration: none;
-}
-
 @media (min-width :951px){
   .workCard{
     width:25vw;
@@ -128,5 +116,31 @@ a{
     width:100%;
     margin: 5vh 0;
   }
+}
+.title{
+  word-break:break-word;
+  font-size:150%
+}
+.photo{
+  width :100%;
+  height:240px;
+  border-bottom: 1px solid black;
+}
+
+.text{
+  padding: 1vh 16px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+ul{
+  margin:0 0 0 5%;
+}
+li{
+  font-size: 100%;
+  // margin: 0,0,0,10px;
 }
 </style>
