@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <v-row>
       <v-btn-toggle
           color="deep-purple accent-3"
@@ -18,7 +17,7 @@
       </v-btn-toggle>
     </v-row>
 
-    <div v-for="(element,index) of QAList" :key="index">
+    <div v-for="(element) of QAList" :key="element.Q">
       <q-a-component :data= element> </q-a-component>
     </div>
 
