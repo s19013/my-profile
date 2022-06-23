@@ -5,8 +5,9 @@ export class baseWorkData{
                 title   = null,
                 codeUrl = null,
                 workUrl = null,
-                comment = null,
                 readmeUrl = null,
+                used    = null,
+                comment = null,
             }
         )
     {
@@ -15,6 +16,7 @@ export class baseWorkData{
         this.codeUrl = codeUrl
         this.workUrl = workUrl
         this.readmeUrl = readmeUrl
+        this.used    = used
         this.comment = comment
     }
 }
