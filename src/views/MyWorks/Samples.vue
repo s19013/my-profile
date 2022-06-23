@@ -7,13 +7,13 @@
 
     <div class="cardGroup">
         <div v-for="(element,index) of sampleWorks.works" :key="index">
-
+        
           <div >
             <work-card-component :work = element></work-card-component>
           </div>
 
         </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -27,7 +27,7 @@
     },
     data() {
       return {
-        sampleWorks:new MyWorksSampleWorks
+        sampleWorks:new MyWorksSampleWorks()
       }
     },
   }
