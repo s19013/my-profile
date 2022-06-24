@@ -14,7 +14,7 @@
           <v-btn value="性格"   class="v-btn" @click="filter('性格')"  >性格</v-btn>
           <v-btn value="考え"   class="v-btn" @click="filter('考え')"  >考え</v-btn>
           <v-btn value="過去"   class="v-btn" @click="filter('過去')"  >過去</v-btn>
-          <v-btn value="その他"   class="v-btn" @click="filter('その他')"  >その他</v-btn>
+          <v-btn value="その他" class="v-btn" @click="filter('その他')"  >その他</v-btn>
       </v-btn-toggle>
     </v-row>
 
