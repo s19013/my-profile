@@ -1,24 +1,8 @@
 # my-profile
 
-## Project setup
-```
-npm install
-```
+## リンク
+https://s19013.github.io/my-profile/FQA
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## つくった目的
+vue vue-routerの練習として  
+私のことをもっと知ってほしいため  
