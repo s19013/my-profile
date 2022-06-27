@@ -59,6 +59,14 @@ phpのフルスクラッチ`
 udemyの講座に従いつくりました｡  
 `
             }),
+            new baseWorkData({
+                title:"api-test2",
+                codeUrl:"https://github.com/s19013/api-test2",
+                used:["php","laravel"],
+                comment:`
+自作apiの練習として作りました
+`
+            }),
         ]
     }
 
