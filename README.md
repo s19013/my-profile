@@ -1,7 +1,7 @@
 # my-profile
 
 ## リンク
-https://s19013.github.io/my-profile/FQA
+https://s19013.github.io/my-profile
 
 
 ## つくった目的
