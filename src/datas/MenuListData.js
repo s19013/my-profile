@@ -13,7 +13,7 @@ export class MenuListData{
             },
             {
                 to   :"/FQA",
-                title:"よくある質問",
+                title:"質問集",
                 icon :"fa-solid fa-circle-question",
                 activeicon:"fa-solid fa-circle-question"
             },
