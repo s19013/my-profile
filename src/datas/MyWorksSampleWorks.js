@@ -67,6 +67,31 @@ udemyの講座に従いつくりました｡
 自作apiの練習として作りました
 `
             }),
+            new baseWorkData({
+                title:"api-sample-sanctum",
+                codeUrl:"https://github.com/s19013/api-sample-sanctum",
+                used:["php","laravel"],
+                comment:`
+認証付きapiを作ってみたかったのでサンプルを真似しました
+`
+            }),
+            new baseWorkData({
+                title:"vue-laravel-spa-sample",
+                codeUrl:"https://github.com/s19013/vue-laravel-spa-sample",
+                used:["php","laravel","vue.js","javascript"],
+                comment:`
+api通信をするspaを作ってみたかったのでサンプルを真似しました｡
+viteを使ってビルドすることを強制させられたのでviteのことを調べたりするのが大変でした
+`
+            }),
+            new baseWorkData({
+                title:"vuex-sample",
+                codeUrl:"https://github.com/s19013/vuex-sample",
+                used:["vue.js","javascript"],
+                comment:`
+vuexを使って見たかったのでサンプルを真似しました
+`
+            }),
         ]
     }
 
