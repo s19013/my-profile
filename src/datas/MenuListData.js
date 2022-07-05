@@ -17,11 +17,11 @@ export class MenuListData{
                 icon :"fa-solid fa-circle-question",
                 activeicon:"fa-solid fa-circle-question"
             },
-            {
-                to   :"/Hobby",
-                title:"趣味",
-                icon :"fa-gamepad",
-            }
+            // {
+            //     to   :"/Hobby",
+            //     title:"趣味",
+            //     icon :"fa-gamepad",
+            // }
         ]
         this.AppListFontSize = "2vw"
         //-----------------------------

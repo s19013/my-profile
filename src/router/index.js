@@ -33,11 +33,11 @@ const routes = [
     name: "FQA",
     component: () => import('../views/FQA.vue')
   },
-  {
-    path: "/Hobby",
-    name: "Hobby",
-    component: () => import('../views/Hobby.vue')
-  },
+  // {
+  //   path: "/Hobby",
+  //   name: "Hobby",
+  //   component: () => import('../views/Hobby.vue')
+  // },
   {
     path: '/:catchAll(.*)',
     redirect:'/Home'
