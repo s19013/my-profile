@@ -3,47 +3,6 @@ export class MyWorksSampleWorks{
     constructor() {
         this.works = [
             new baseWorkData({
-                title:"vue-todo",
-                codeUrl:"https://github.com/s19013/vue-todo2",
-                workUrl:"https://s19013.github.io/vue-todo2/",
-                used:["javascript","Vue.js","html","css"],
-                comment:`
-udemyの講座に従いつくりました｡  
-保存機能はついていません  
-検索機能あり`
-            }),
-            new baseWorkData({
-                title:"vue-carousel-sample",
-                codeUrl:"https://github.com/s19013/vue-carousel-sample",
-                workUrl:"https://s19013.github.io/vue-carousel-sample/",
-                used:["javascript","Vue.js","html","css"],
-                comment:`
-udemyの講座に従いつくりました｡  
-スライドショー  
-一定時間ごとに自動的に次の画像へ動く機能あり
-`
-            }),
-            new baseWorkData({
-                title:"dogApi-vue",
-                codeUrl:"https://github.com/s19013/dogApi-vue",
-                workUrl:"https://s19013.github.io/dogApi-vue/",
-                used:["javascript","Vue.js","html","css"],
-                comment:`
-udemyの講座に従いつくりました｡  
-選んだ犬の画像を表示します
-                `
-            }),
-            new baseWorkData({
-                title:"vue-modal-sample",
-                codeUrl:"https://github.com/s19013/vue-modal-sample",
-                workUrl:"https://s19013.github.io/vue-modal-sample/",
-                used:["javascript","Vue.js","html","css"],
-                comment:`
-udemyの講座に従いつくりました｡  
-画像をクリックすると画像が大きくなります
-`
-            }),
-            new baseWorkData({
                 title:"ECsiteDemo",
                 codeUrl:"https://github.com/s19013/ECSiteDemo",
                 used:["javascript","php","html","css"],
@@ -90,6 +49,47 @@ viteを使ってビルドすることを強制させられたのでviteのこと
                 used:["vue.js","javascript"],
                 comment:`
 vuexを使って見たかったのでサンプルを真似しました
+`
+            }),
+            new baseWorkData({
+                title:"vue-todo",
+                codeUrl:"https://github.com/s19013/vue-todo2",
+                workUrl:"https://s19013.github.io/vue-todo2/",
+                used:["javascript","Vue.js","html","css"],
+                comment:`
+udemyの講座に従いつくりました｡  
+保存機能はついていません  
+検索機能あり`
+            }),
+            new baseWorkData({
+                title:"vue-carousel-sample",
+                codeUrl:"https://github.com/s19013/vue-carousel-sample",
+                workUrl:"https://s19013.github.io/vue-carousel-sample/",
+                used:["javascript","Vue.js","html","css"],
+                comment:`
+udemyの講座に従いつくりました｡  
+スライドショー  
+一定時間ごとに自動的に次の画像へ動く機能あり
+`
+            }),
+            new baseWorkData({
+                title:"dogApi-vue",
+                codeUrl:"https://github.com/s19013/dogApi-vue",
+                workUrl:"https://s19013.github.io/dogApi-vue/",
+                used:["javascript","Vue.js","html","css"],
+                comment:`
+udemyの講座に従いつくりました｡  
+選んだ犬の画像を表示します
+                `
+            }),
+            new baseWorkData({
+                title:"vue-modal-sample",
+                codeUrl:"https://github.com/s19013/vue-modal-sample",
+                workUrl:"https://s19013.github.io/vue-modal-sample/",
+                used:["javascript","Vue.js","html","css"],
+                comment:`
+udemyの講座に従いつくりました｡  
+画像をクリックすると画像が大きくなります
 `
             }),
         ]

@@ -3,6 +3,14 @@ export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
             new baseWorkData({
+                title :"my-wiki,my-bookmark",
+                used:["php","laravel","vue.js","javascript","html","css","gcp"],
+                comment:`
+只今制作中  
+evernoteっぽいアプリ
+`
+                }),
+            new baseWorkData({
                 imgUrl:"originalWorks/knowledge-sharing-bord.png",
                 title :"Knowledge Sharing Board",
                 readmeUrl:"https://github.com/s19013/knowledge-sharing-board",
