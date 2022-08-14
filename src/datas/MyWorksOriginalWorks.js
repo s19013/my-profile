@@ -3,11 +3,15 @@ export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
             new baseWorkData({
+                imgUrl:"originalWorks/my-wiki.png",
                 title :"my-wiki,my-bookmark",
-                used:["php","laravel","vue.js","javascript","html","css","gcp"],
+                readmeUrl:"https://github.com/s19013/my-wiki",
+                codeUrl:"https://github.com/s19013/my-wiki",
+                workUrl:"http://35.230.90.39",
+                used:["php","laravel","vue.js","javascript","html","css","gcp","apach","mariaDB"],
                 comment:`
-只今制作中  
-evernoteっぽいアプリ
+laravelとvueの組み合わせの練習として作りました｡  
+私自身がタグをつけられるブックマークがほしいと思い作りました｡  
 `
                 }),
             new baseWorkData({
@@ -16,7 +20,7 @@ evernoteっぽいアプリ
                 readmeUrl:"https://github.com/s19013/knowledge-sharing-board",
                 codeUrl:"https://github.com/s19013/knowledge-sharing-board",
                 workUrl:"http://knowledge-sharing-board.link/",
-                used:["php","laravel","javascript","html","css"],
+                used:["php","laravel","javascript","html","css","aws","apach","mariaDB"],
                 comment:`
 laravelの練習として作りました  
 今後vueと組み合わせる予定です｡  
