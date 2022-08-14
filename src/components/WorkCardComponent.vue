@@ -66,8 +66,6 @@
 
             <v-card-text class="comments">
               <div v-html="markdownText"></div>
-              <!-- {{markdownText}} -->
-              <!-- {{work.comment.trim()}} -->
             </v-card-text>
           </div>
         </v-expand-transition>
