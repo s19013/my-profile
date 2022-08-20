@@ -7,7 +7,7 @@ export class MyWorksOriginalWorks{
                 title :"my-wiki,my-bookmark",
                 readmeUrl:"https://github.com/s19013/my-wiki",
                 codeUrl:"https://github.com/s19013/my-wiki",
-                workUrl:"http://35.230.90.39",
+                workUrl:"http://hide-no-server.com",
                 used:["php","laravel","vue.js","javascript","html","css","gcp","apach","mariaDB"],
                 comment:`
 laravelとvueの組み合わせの練習として作りました｡  
