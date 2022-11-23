@@ -4,14 +4,18 @@ export class MyWorksOriginalWorks{
         this.works = [
             new baseWorkData({
                 imgUrl:"originalWorks/my-wiki.png",
-                title :"my-wiki,my-bookmark",
+                title :"sundlf",
                 readmeUrl:"https://github.com/s19013/my-wiki",
                 codeUrl:"https://github.com/s19013/my-wiki",
-                workUrl:"http://hide-no-server.com",
-                used:["php","laravel","vue.js","javascript","html","css","gcp","apach","mariaDB"],
+                workUrl:"http://sundlf.com",
+                used:["php","laravel","vue.js","javascript","html","css","aws","apach","mariaDB"],
                 comment:`
 laravelとvueの組み合わせの練習として作りました｡  
 私自身がタグをつけられるブックマークがほしいと思い作りました｡  
+### 名前の由来
+sundry :雑多な  
+ +
+shelf  :本棚  
 `
                 }),
             new baseWorkData({
