@@ -22,6 +22,11 @@ export class HomeData{
             },
             {
                 icon :null,
+                title:'qiita',
+                url  :'https://qiita.com/hideya670',
+            },
+            {
+                icon :null,
                 title:'connpass',
                 url  :'https://connpass.com/user/hideya0522/',
             },
