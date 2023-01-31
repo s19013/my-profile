@@ -63,7 +63,7 @@ vueの練習として作りました`
                 used:["javascript","Vue.js","html","css"],
                 comment:`
 このサイトです｡  
-vue Routerの練習と自己開示のためにつくりました`
+vue Routerの練習と自己開示のため､カジュアル面談での話の種になればと思いつくりました`
                 }),
         ]
     }
