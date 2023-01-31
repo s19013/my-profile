@@ -12,6 +12,7 @@ export class MyWorksOriginalWorks{
                 comment:`
 laravelとvueの組み合わせの練習として作りました｡  
 私自身がタグをつけられるブックマークがほしいと思い作りました｡  
+[発表資料](https://docs.google.com/presentation/d/e/2PACX-1vRjNjWhfdN9ykD95Ru1eLCUQbBMRZL9sRkH1CB81XXpzMycUQcY8dcoJ8UAK7wlBNBPGWqAz5n3wYC4/pub?start=false&loop=false&delayms=3000)
 ### 名前の由来
 sundry :雑多な  
  +
@@ -27,7 +28,6 @@ shelf  :本棚
                 used:["php","laravel","javascript","html","css","aws","apach","mariaDB"],
                 comment:`
 laravelの練習として作りました  
-今後vueと組み合わせる予定です｡  
 [発表資料](https://docs.google.com/presentation/d/e/2PACX-1vTcFdwzqewHn7cVl-8MFKz8zTfPLaHjQlrhoJ40r9U-xL8dYW1DoHz0v8SkOTZ8EiVAB9VEaGhvj4jp/pub?start=false&loop=false&delayms=3000&slide=id.p)
 `
                 }),
@@ -41,6 +41,7 @@ laravelの練習として作りました
                 comment:`
 学校の卒業の制作物として作りました  
 コンピューターを作ったみたかったのでコンピューターのアルゴリズムを作りました｡  
+ストアに出品しました｡
 [アルゴリズムのスライド](https://speakerdeck.com/s19013/goburetuto-fa-biao-suraido)
 `
                 }),
@@ -52,7 +53,7 @@ laravelの練習として作りました
                 workUrl:"https://s19013.github.io/web-blackjack-vue/",
                 used:["javascript","Vue.js","html","css"],
                 comment:`
-vueの練習として作りました`
+最初は生javascriptの練習としてつくりましたが､後にvueを学んだのでvueに置き換えました`
                 }),
             new baseWorkData({
                 imgUrl:"originalWorks/my-profile.png",
