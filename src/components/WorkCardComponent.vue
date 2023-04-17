@@ -129,11 +129,6 @@ import { marked } from 'marked'
   padding: 1vh 16px;
 }
 
-a{
-  color: black;
-  text-decoration: none;
-}
-
 ul{
   margin:0 0 0 5%;
 }
