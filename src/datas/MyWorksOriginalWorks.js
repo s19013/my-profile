@@ -3,9 +3,22 @@ export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
             new baseWorkData({
+                imgUrl:null,
+                title :"sundlf-bookmark-addon",
+                readmeUrl:"https://github.com/s19013/sundlf-addon#readme",
+                codeUrl:"https://github.com/s19013/sundlf-addon",
+                workUrl:null,
+                used:["vue.js","javascript","html","css"],
+                comment:`
+sundlfをより便利にするために作ったアドオン
+まだテスト段階なので公開はしてない
+5月または6月頃に公開予定
+                `
+                }),
+            new baseWorkData({
                 imgUrl:"originalWorks/my-wiki.png",
                 title :"sundlf",
-                readmeUrl:"https://github.com/s19013/my-wiki",
+                readmeUrl:"https://github.com/s19013/my-wiki#readme",
                 codeUrl:"https://github.com/s19013/my-wiki",
                 workUrl:"http://sundlf.com",
                 used:["php","laravel","vue.js","javascript","html","css","aws","apach","mariaDB"],
@@ -22,9 +35,9 @@ shelf  :本棚
             new baseWorkData({
                 imgUrl:"originalWorks/knowledge-sharing-bord.png",
                 title :"Knowledge Sharing Board",
-                readmeUrl:"https://github.com/s19013/knowledge-sharing-board",
+                readmeUrl:"https://github.com/s19013/knowledge-sharing-board#readme",
                 codeUrl:"https://github.com/s19013/knowledge-sharing-board",
-                workUrl:"http://knowledge-sharing-board.link/",
+                workUrl:null,
                 used:["php","laravel","javascript","html","css","aws","apach","mariaDB"],
                 comment:`
 laravelの練習として作りました  
@@ -34,7 +47,7 @@ laravelの練習として作りました
             new baseWorkData({
                 imgUrl:"originalWorks/gobblet.png",
                 title :"ゴブレット",
-                readmeUrl:"https://github.com/s19013/GraduationTasks",
+                readmeUrl:"https://github.com/s19013/GraduationTasks#readme",
                 codeUrl:"https://github.com/s19013/GraduationTasks/tree/main/project/Gobblet5/app/src/main",
                 workUrl:"https://play.google.com/store/apps/details?id=com.game.gobblet5&hl=ja&gl=US",
                 used:["kotlin","androidstudio"],
@@ -48,7 +61,7 @@ laravelの練習として作りました
             new baseWorkData({
                 imgUrl:"originalWorks/blackJack.png",
                 title :"ブラックジャック",
-                readmeUrl:"https://github.com/s19013/web-blackjack-vue",
+                readmeUrl:"https://github.com/s19013/web-blackjack-vue#readme",
                 codeUrl:"https://github.com/s19013/web-blackjack-vue/",
                 workUrl:"https://s19013.github.io/web-blackjack-vue/",
                 used:["javascript","Vue.js","html","css"],
@@ -58,7 +71,7 @@ laravelの練習として作りました
             new baseWorkData({
                 imgUrl:"originalWorks/my-profile.png",
                 title :"自己紹介サイト",
-                readmeUrl:"https://github.com/s19013/my-profile",
+                readmeUrl:"https://github.com/s19013/my-profile#readme",
                 codeUrl:"https://github.com/s19013/my-profile",
                 workUrl:"https://s19013.github.io/my-profile/Home",
                 used:["javascript","Vue.js","html","css"],
