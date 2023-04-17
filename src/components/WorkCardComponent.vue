@@ -29,7 +29,7 @@
 
     <!-- readme -->
     <div class="text" v-if="work.readmeUrl !== null">
-        <a :href="work.readmeUrl"  target="_blank" rel="noopener noreferrer">readme</a>
+        <a :href="work.readmeUrl"  target="_blank" rel="noopener noreferrer">readme(詳細)</a>
         <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" />
     </div>
 
