@@ -21,6 +21,10 @@
 
 <script>
 import { marked } from 'marked'
+marked.setOptions({
+    "breaks": true,
+    "gfm": true,
+});
   export default {
     name: 'QAComponent',
     data() {
