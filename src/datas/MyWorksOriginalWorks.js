@@ -7,12 +7,11 @@ export class MyWorksOriginalWorks{
                 title :"sundlf-bookmark-addon",
                 readmeUrl:"https://github.com/s19013/sundlf-addon#readme",
                 codeUrl:"https://github.com/s19013/sundlf-addon",
-                workUrl:null,
+                workUrl:"https://chrome.google.com/webstore/detail/sundlf-bookmark-addon/mfcobcdpjbgnpbkhbbfaabkkphpceoka",
                 used:["vue.js","javascript","html","css"],
                 comment:`
 sundlfをより便利にするために作ったアドオン
-まだテスト段階なので公開はしてない
-5月または6月頃に公開予定
+今開いているページを保存できる
                 `
                 }),
             new baseWorkData({
