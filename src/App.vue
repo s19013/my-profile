@@ -32,10 +32,8 @@ export default {
 };
 </script>
 <style lang="scss">
-.main{
-  background-color: #ebeef0;
-  color:#0a192b;
-}
+body{background-color: #ebeef0;}
+.main{color:#0a192b;}
 header{
   background-color:#d5e1e9 ;
   display: flex;
