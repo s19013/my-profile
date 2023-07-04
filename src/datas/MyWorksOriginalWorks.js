@@ -19,7 +19,7 @@ sundlfをより便利にするために作ったアドオン
                 title :"sundlf",
                 readmeUrl:"https://github.com/s19013/my-wiki#readme",
                 codeUrl:"https://github.com/s19013/my-wiki",
-                workUrl:"http://sundlf.com",
+                workUrl:"http://sundlf.com?utm_source=my-profile",
                 used:["php","laravel","vue.js","javascript","html","css","aws","apach","mariaDB"],
                 comment:`
 laravelとvueの組み合わせの練習として作りました｡  
