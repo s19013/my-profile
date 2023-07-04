@@ -54,6 +54,12 @@
       </v-expand-transition>
     </div>
     <!--  -->
+    <div class="github-tips">
+      <h2>githubの状態</h2>
+      <img class="short" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=s19013&theme=default" alt="">
+      <img class="short" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=s19013&theme=default" alt="">
+      <img class="long" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=s19013&theme=default" alt="">
+    </div>
   </div>
 </template>
 
@@ -91,6 +97,18 @@ import  {HomeData}  from "../datas/HomeData.js";
   .lastUpdated{
     font-size:0.5vw ;
     text-align: right
+  }
+  .github-tips{
+    margin-top: 2rem;
+    @media (min-width: 501px) {
+      img{zoom: 0.8;}
     }
+    @media (max-width: 500px) {
+      img{width: 50%;}
+      .long{
+        width: 100%;
+      }
+    }
+  }
 </style>
 
