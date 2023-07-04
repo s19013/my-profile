@@ -13,7 +13,7 @@
         <v-expand-transition>
           <div v-show="show" class="answer">
             <div class="markA">A</div>
-            <div v-html="markdownText"></div>
+            <div class="answerBody" v-html="markdownText"></div>
           </div>
         </v-expand-transition>
   </div>
@@ -57,8 +57,8 @@ marked.setOptions({
         }
     }
     .answer{
-        p { margin: 0 0 0 30px; }
-        li{ margin: 0 0 0 40px; }
+        ul{padding-left: 1rem;}
+        ol{padding-left: 1rem;}
         .markA{
             width: 22px;
             padding:1px 5px;
@@ -66,6 +66,7 @@ marked.setOptions({
             font-weight: bold;
             color: aliceblue;
         }
+        .answerBody{padding: 0.5rem 2rem;}
     }
 }
 </style>
