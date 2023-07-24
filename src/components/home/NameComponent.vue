@@ -32,8 +32,15 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    .familyName{text-align: center;}
-    .secondName{text-align: center;}
+    gap: 1rem;
+    .familyName{
+      text-align: center;
+      margin-left: auto;
+    }
+    .secondName{
+      text-align: center;
+      margin-right: auto;
+    }
     h2{
       font-size:200%
     }
