@@ -54,11 +54,18 @@
       </v-expand-transition>
     </div>
     <!--  -->
+
+    <div class="paiza">
+      <h2>Paiza</h2>
+      <h3>ランク:B</h3>
+      <img src="@/assets/img/paiza.png" alt="">
+    </div>
     <div class="github-tips">
       <h2>githubの状態</h2>
+      <img v-if="loading" class="loading" src="@/assets/img/loading.png" alt="">
       <img class="short" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=s19013&theme=default" alt="">
       <img class="short" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=s19013&theme=default" alt="">
-      <img class="long" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=s19013&theme=default" alt="">
+      <img class="long" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=s19013&theme=default" alt="" @load="loaded()">
     </div>
   </div>
 </template>
@@ -86,10 +93,14 @@ import  {HomeData}  from "../datas/HomeData.js";
       return {
         homeData:new HomeData,
         // トリガー
-        showCareerList:false,
-        showQualificationList:false
+        showCareerList:true,
+        showQualificationList:true,
+        loading:true,
       }
     },
+    methods:{
+      loaded(){this.loading = false}
+    }
   }
 </script>
 
@@ -98,8 +109,12 @@ import  {HomeData}  from "../datas/HomeData.js";
     font-size:0.5vw ;
     text-align: right
   }
+  .paiza{
+    margin: 2rem 0;
+    img{width: 50%;}
+  }
   .github-tips{
-    margin-top: 2rem;
+    margin: 2rem 0;
     @media (min-width: 501px) {
       img{zoom: 0.8;}
     }
@@ -109,6 +124,9 @@ import  {HomeData}  from "../datas/HomeData.js";
         width: 100%;
       }
     }
+  }
+  .loading{
+    width: 30%;
   }
 </style>
 
