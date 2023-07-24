@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="lastUpdated"> 最終更新日:2023/01/31</p>
+    <p class="lastUpdated"> 最終更新日:2023/07/24</p>
     <name-component
     :name="homeData.name"
     class="name-component">
