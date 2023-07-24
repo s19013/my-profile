@@ -126,7 +126,7 @@ import  {HomeData}  from "../datas/HomeData.js";
     }
   }
   .loading{
-    width: 30%;
+    width: 20%;
   }
 </style>
 
