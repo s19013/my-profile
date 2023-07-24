@@ -3,6 +3,17 @@ export class MyWorksOriginalWorks{
     constructor() {
         this.works = [
             new baseWorkData({
+                imgUrl:'originalWorks/Tetris.png',
+                title :"Tetris",
+                readmeUrl:"https://github.com/s19013/tetris-vue/blob/main/README.md",
+                codeUrl:"https://github.com/s19013/tetris-vue",
+                workUrl:"https://s19013.github.io/tetris-vue/",
+                used:["vue.js","javascript","html","css"],
+                comment:`
+Tスピンなどでおかしな動きをするがとりあえず列を揃えたら消えるテトリス
+                `
+                }),
+            new baseWorkData({
                 imgUrl:null,
                 title :"sundlf-bookmark-addon",
                 readmeUrl:"https://github.com/s19013/sundlf-addon#readme",
