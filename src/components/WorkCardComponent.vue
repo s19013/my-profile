@@ -126,7 +126,6 @@ marked.setOptions({
 .photo{
   width :100%;
   height:200px;
-  padding:5px;
   border-bottom: 1px solid black;
 }
 
