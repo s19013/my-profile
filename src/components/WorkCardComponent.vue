@@ -125,18 +125,13 @@ marked.setOptions({
 }
 .photo{
   width :100%;
-  height:240px;
+  height:200px;
+  padding:5px;
   border-bottom: 1px solid black;
 }
 
-.text{
-  padding: 1vh 16px;
-}
+.text{ padding: 1vh 16px; }
 
-ul{
-  margin:0 0 0 5%;
-}
-li{
-  font-size: 80%;
-}
+ul{ margin:0 0 0 5%; }
+li{ font-size: 80%; }
 </style>
