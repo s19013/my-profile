@@ -48,7 +48,7 @@ table {
   .Heading {
     background-color: #3f72af;
     color: #f9f7f7;
-    font-size: 1.4vw;
+    font-size: 1rem;
   }
   th,
   td {
@@ -56,7 +56,7 @@ table {
     text-align: center;
     padding: 5px 0;
     p {
-      font-size: 1.2vw;
+      font-size: 1rem;
       overflow-wrap: normal;
       font-weight: normal;
     }
