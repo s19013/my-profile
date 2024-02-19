@@ -1,12 +1,9 @@
 <template>
   <v-card class="workCard">
     <!-- 写真 -->
-    <div class="photo">
-      <v-img v-if="work.imgUrl == null" src="@/assets/img/no_image.jpg">
-      </v-img>
-      <!--  -->
-      <v-img v-else :src="imgSrc"></v-img>
-    </div>
+    <v-img v-if="work.imgUrl == null" src="@/assets/img/no_image.jpg"> </v-img>
+    <!--  -->
+    <v-img v-else :src="imgSrc" lazy-src="@/assets/img/no_image.jpg"> </v-img>
     <!-- -->
 
     <v-card-title class="title">
@@ -100,9 +97,7 @@ export default {
   word-break: break-word;
   font-size: 1.5rem;
 }
-.photo {
-  width: 100%;
-  height: 200px;
+.v-img {
   border-bottom: 1px solid black;
 }
 
