@@ -25,11 +25,11 @@ export default {
   display: flex;
 }
 .router-link {
-  margin: 0 2vmin;
+  margin: 0 1rem;
   font-size: 1.5rem;
 }
 a {
-  padding: 0 1vw;
+  padding: 0 0.5rem;
   color: black;
   text-decoration: none;
 }
