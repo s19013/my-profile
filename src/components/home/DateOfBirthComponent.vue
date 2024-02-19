@@ -3,10 +3,8 @@
     <p>生年月日</p>
     <div class="birthDay">
       <p>
-        {{birthDay.year }}年
-        {{birthDay.month}}月
-        {{birthDay.date }}日
-        {{age}}歳
+        {{ birthDay.year }}年 {{ birthDay.month }}月 {{ birthDay.date }}日
+        {{ age }}歳
       </p>
     </div>
   </div>
@@ -14,30 +12,32 @@
 
 <script>
 import dayjs from "dayjs";
-  export default {
-    name: 'DateOfBirthComponent',
-    data() {
-      return {
-        today:dayjs() //今日の日付
-      }
+export default {
+  name: "DateOfBirthComponent",
+  data() {
+    return {
+      today: dayjs(), //今日の日付
+    };
+  },
+  props: ["birthDay"],
+  computed: {
+    age: function () {
+      //年齢を計算する
+      const dayjsBirthday = dayjs(
+        `${this.birthDay.year}-${this.birthDay.month}-${this.birthDay.date}`
+      );
+      return this.today.diff(dayjsBirthday, "year");
     },
-    props:['birthDay'],
-    computed:{
-      age:function () { //年齢を計算する
-        const dayjsBirthday = dayjs(`${this.birthDay.year}-${this.birthDay.month}-${this.birthDay.date}`)
-        return this.today.diff(dayjsBirthday,'year')
-      }
-    }
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.birthDay{
+.birthDay {
   // text-align: center;
-  p{
-    font-size:150%;
-    margin: 5px 0 5px 10px;
+  p {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
   }
 }
-
 </style>
