@@ -68,28 +68,14 @@ export default {
 </script>
 
 <style lang="scss">
-@media (min-width: 451px) {
-  .tags {
-    flex-wrap: wrap;
-    margin: 10px auto;
-    button {
-      width: 12vw;
-    }
-    /* p{
-      width:2vw;
-    } */
-  }
-}
-@media (max-width: 450px) {
-  .tags {
-    flex-wrap: wrap;
-    margin: 20px auto;
-    button {
+.tags {
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  button {
+    width: 10rem;
+    @media (max-width: 450px) {
       width: 25vw;
     }
-    /* p{
-      width:2vw;
-    } */
   }
 }
 .QA {
