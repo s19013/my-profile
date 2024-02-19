@@ -48,9 +48,11 @@
         </ul>
       </div>
 
+      <!-- コメント -->
       <div v-if="work.comment !== null">
+        <!--  -->
         <v-card-actions @click="show = !show">
-          <p>コメントを見る</p>
+          <p>軽いコメント</p>
 
           <v-spacer></v-spacer>
 
@@ -59,6 +61,7 @@
           </v-btn>
         </v-card-actions>
 
+        <!-- 表示するコメント -->
         <v-expand-transition>
           <div v-show="show">
             <v-divider></v-divider>
@@ -100,7 +103,7 @@ export default {
 @media (min-width: 951px) {
   .workCard {
     width: 25vw;
-    margin: 3vh 1vw;
+    margin: 1rem;
   }
 }
 
@@ -119,7 +122,7 @@ export default {
 }
 .title {
   word-break: break-word;
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 .photo {
   width: 100%;
@@ -135,6 +138,6 @@ ul {
   margin: 0 0 0 5%;
 }
 li {
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 </style>
