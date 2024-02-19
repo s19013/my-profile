@@ -37,7 +37,7 @@ export default {
   // text-align: center;
   p {
     font-size: 1.5rem;
-    margin: 0.5rem 1rem;
+    margin: 0.2rem 0 0.2rem 1rem;
   }
 }
 </style>
