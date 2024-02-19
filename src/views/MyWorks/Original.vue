@@ -30,37 +30,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 951px) {
-  .workCard {
-    width: 40%;
-    margin: 1rem;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 950px) {
-  .workCard {
-    width: 42vw;
-    margin: 2vh 2vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .workCard {
+.workCard {
+  width: 49%;
+  @media (max-width: 450px) {
     width: 100%;
-    margin: 5vh 0;
   }
 }
-@media (min-width: 501px) {
-  .cardGroup {
-    display: flex;
-    flex-wrap: wrap;
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (max-width: 450px) {
+    gap: 2rem;
   }
 }
+
 .heading {
   border-bottom: 1px solid black;
-  margin: 2vh 0;
+  margin: 1rem 0;
   p {
-    margin: 0 2vw;
+    margin: 1rem 0;
   }
 }
 </style>
