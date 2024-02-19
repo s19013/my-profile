@@ -27,6 +27,10 @@ export default {
 .router-link {
   margin: 0 1rem;
   font-size: 1.5rem;
+  @media (max-width: 450px) {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
 }
 a {
   padding: 0 0.5rem;
