@@ -47,7 +47,8 @@ export default {
       height: 40%;
     }
     .markQ {
-      padding: 1px 5px;
+      padding: 0.1rem 0.4rem;
+      width: 1.5rem;
       background-color: rgb(0, 191, 255);
       font-weight: bold;
       color: aliceblue;
@@ -58,6 +59,7 @@ export default {
     }
   }
   .answer {
+    padding: 0.5rem;
     ul {
       padding-left: 1rem;
     }
@@ -65,8 +67,8 @@ export default {
       padding-left: 1rem;
     }
     .markA {
-      padding: 1px 5px;
-      width: 22px;
+      padding: 0.1rem 0.4rem;
+      width: 1.5rem;
       background-color: rgb(255, 72, 0);
       font-weight: bold;
       color: aliceblue;
