@@ -4,11 +4,10 @@
       <p>設計などから自分で考えた作品</p>
     </div>
     <div class="cardGroup">
-      <div v-for="(element, index) of originalWorks.works" :key="index">
-        <div>
-          <work-card-component :work="element"></work-card-component>
-        </div>
-      </div>
+      <!-- vue2なのでこの書き方 -->
+      <template v-for="(element, index) of originalWorks.works">
+        <work-card-component :work="element" :key="index"></work-card-component>
+      </template>
     </div>
   </div>
 </template>
@@ -33,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 951px) {
   .workCard {
-    width: 25vw;
+    width: 40%;
     margin: 1rem;
   }
 }
