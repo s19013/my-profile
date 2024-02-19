@@ -1,16 +1,17 @@
 <template>
   <div>
     <div class="heading">
-      <p>参考書などのサンプルを見ながら作った作品</p>
-      <p>一部はアレンジしてる</p>
+      <p>
+        参考書などのサンプルを見ながら作った作品
+        <br />
+        一部はアレンジしてる
+      </p>
     </div>
 
     <div class="cardGroup">
-      <div v-for="(element, index) of sampleWorks.works" :key="index">
-        <div>
-          <work-card-component :work="element"></work-card-component>
-        </div>
-      </div>
+      <template v-for="(element, index) of sampleWorks.works">
+        <work-card-component :work="element" :key="index"></work-card-component>
+      </template>
     </div>
   </div>
 </template>
