@@ -23,7 +23,6 @@ export class MenuListData{
             //     icon :"fa-gamepad",
             // }
         ]
-        this.AppListFontSize = "2vw"
         //-----------------------------
         this.MyWorksList = [
             {

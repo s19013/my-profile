@@ -1,10 +1,7 @@
 <template>
   <div>
     <header>
-      <menu-list-component
-        :list="menuList.AppList"
-        :fontSize="menuList.AppListFontSize"
-      ></menu-list-component>
+      <menu-list-component :list="menuList.AppList"></menu-list-component>
     </header>
 
     <div class="main">
@@ -16,27 +13,30 @@
 </template>
 
 <script>
-import MenuListComponent  from "./components/MenuListComponent.vue";
+import MenuListComponent from "./components/MenuListComponent.vue";
 import { MenuListData } from "./datas/MenuListData";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MenuListComponent
+    MenuListComponent,
   },
   data() {
     return {
-      menuList:new MenuListData
-    }
+      menuList: new MenuListData(),
+    };
   },
 };
 </script>
 <style lang="scss">
-body{background-color: #ebeef0;}
-.main{color:#0a192b;}
-header{
-  background-color:#d5e1e9 ;
+body {
+  background-color: #ebeef0;
+}
+.main {
+  color: #0a192b;
+}
+header {
+  background-color: #d5e1e9;
   display: flex;
 }
-
 </style>

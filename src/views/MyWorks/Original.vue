@@ -3,15 +3,12 @@
     <div class="heading">
       <p>設計などから自分で考えた作品</p>
     </div>
-      <div class="cardGroup">
-        <div v-for="(element,index) of originalWorks.works" :key="index">
-
-          <div >
-            <work-card-component :work = element></work-card-component>
-          </div>
-
-        </div>
-      </div>
+    <div class="cardGroup">
+      <!-- vue2なのでこの書き方 -->
+      <template v-for="(element, index) of originalWorks.works">
+        <work-card-component :work="element" :key="index"></work-card-component>
+      </template>
+    </div>
   </div>
 </template>
 
@@ -19,32 +16,41 @@
 import WorkCardComponent from "@/components/WorkCardComponent.vue";
 import { MyWorksOriginalWorks } from "@/datas/MyWorksOriginalWorks.js";
 
-  export default {
-    name: 'MyWorks-OriginalView',
-    components:{
-      WorkCardComponent
-    },
-    data() {
-      return {
-        originalWorks:new MyWorksOriginalWorks,
-      }
-    },
-  }
+export default {
+  name: "MyWorks-OriginalView",
+  components: {
+    WorkCardComponent,
+  },
+  data() {
+    return {
+      originalWorks: new MyWorksOriginalWorks(),
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 501px){
-  .cardGroup{
-    display: flex;
-    flex-wrap:wrap;
-    
+.workCard {
+  width: 49%;
+  @media (max-width: 450px) {
+    width: 100%;
   }
 }
-.heading{
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (max-width: 450px) {
+    gap: 2rem;
+  }
+}
+
+.heading {
   border-bottom: 1px solid black;
-  margin: 2vh 0;
-  p{
-    margin: 0 2vw;
+  margin: 1rem 0;
+  p {
+    margin: 1rem 0;
   }
 }
 </style>
