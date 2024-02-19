@@ -51,7 +51,7 @@ export default {
         return (this.QAList = this.QA.list);
       }
 
-      //引数でフィルタリングする
+      //つけたタグでフィルタリング
       const List = [];
       for (const element of this.QA.list) {
         if (element.tag.includes(arg)) {
