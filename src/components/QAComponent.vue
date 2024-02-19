@@ -1,5 +1,5 @@
 <template>
-  <div class="FQA">
+  <div class="QA">
     <div @click="show = !show">
       <div class="question">
         <div class="markQ">Q</div>
@@ -38,11 +38,11 @@ export default {
 </script>
 
 <style lang="scss">
-.FQA {
+.QA {
   background-color: #f5f5f5;
   .question {
     display: flex;
-    margin: 10px 0;
+    padding: 0.5rem;
     .btn {
       height: 40%;
     }
@@ -65,8 +65,8 @@ export default {
       padding-left: 1rem;
     }
     .markA {
-      width: 22px;
       padding: 1px 5px;
+      width: 22px;
       background-color: rgb(255, 72, 0);
       font-weight: bold;
       color: aliceblue;

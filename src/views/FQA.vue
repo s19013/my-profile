@@ -92,6 +92,9 @@ export default {
     } */
   }
 }
+.QA {
+  margin: 0.5rem 0;
+}
 </style>
 <!-- align="center"
 justify="center" -->
