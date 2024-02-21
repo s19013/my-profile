@@ -1,11 +1,34 @@
 <template>
   <div>
+    <div class="menuComponent">
+      <button
+        @click="
+          setData(originalWorks);
+          setNowShowing('original');
+        "
+        :class="{ active: nowShowing == 'original' }"
+        :disabled="nowShowing == 'original'"
+      >
+        <!-- ↑余分な切り替えしないようにすでにアクティブな場合は押せないようにする -->
+        オリジナル
+      </button>
+      <button
+        @click="
+          setData(sampleWorks);
+          setNowShowing('sample');
+        "
+        :class="{ active: nowShowing == 'sample' }"
+        :disabled="nowShowing == 'sample'"
+      >
+        サンプル
+      </button>
+    </div>
     <div class="heading">
-      <p>{{ pageTitle }}</p>
+      <p>{{ data.pageTitle }}</p>
     </div>
     <div class="cardGroup">
       <!-- vue2なのでこの書き方 -->
-      <template v-for="(element, index) of works">
+      <template v-for="(element, index) of data.works">
         <work-card-component :work="element" :key="index"></work-card-component>
       </template>
     </div>
@@ -14,16 +37,29 @@
 
 <script>
 import WorkCardComponent from "@/components/WorkCardComponent.vue";
-import * as originalWorks from "@/datas/MyWorksOriginalWorks.js";
+import OriginalWorks from "@/datas/OriginalWorks.js";
+import SampleWorks from "@/datas/SampleWorks.js";
+
 export default {
   name: "MyWorks",
   components: { WorkCardComponent },
   data() {
     return {
       // 初期値はoriginal
-      pageTitle: originalWorks.pageTitle,
-      works: originalWorks.works,
+      // dataは安直すぎた?
+      originalWorks: new OriginalWorks(),
+      sampleWorks: new SampleWorks(),
+      data: new OriginalWorks(), // この中ではすぐにthis.originalWorksとしていできない｡mountedでいれるのも面倒
+      nowShowing: "original",
     };
+  },
+  methods: {
+    setData(arg) {
+      this.data = arg;
+    },
+    setNowShowing(arg) {
+      this.nowShowing = arg;
+    },
   },
 };
 </script>
@@ -55,6 +91,22 @@ export default {
 .menuComponent {
   display: flex;
   justify-content: center;
-  padding: 1vh 0 0 0;
+  gap: 1rem;
+
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  @media (max-width: 450px) {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0 0.5rem;
+  }
+  .active {
+    background-color: #112d4e;
+    color: #f9f7f7;
+    font-weight: bold;
+  }
 }
 </style>
