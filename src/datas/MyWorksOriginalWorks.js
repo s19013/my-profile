@@ -1,6 +1,7 @@
 import { baseWorkData } from "./baseWorkData";
 export class MyWorksOriginalWorks{
     constructor() {
+        this.pageTitle = "設計などから自分で考えた作品"
         this.works = [
             new baseWorkData({
                 imgUrl:'originalWorks/Tetris.png',
