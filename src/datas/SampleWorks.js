@@ -1,6 +1,6 @@
 import { baseWorkData } from "./baseWorkData";
-export class SampleWorks{
-    pageTitle = "参考書などのサンプルを見ながら作った作品 一部はアレンジしてる"
+export default class SampleWorks{
+    pageTitle = "参考書などのサンプルを見ながら作った作品,一部はアレンジしてる"
     works = [
         new baseWorkData({
             title:"ECsiteDemo",

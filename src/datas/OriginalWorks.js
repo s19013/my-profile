@@ -1,5 +1,5 @@
 import { baseWorkData } from "./baseWorkData";
-export class OriginalWorks{
+export default class OriginalWorks{
     pageTitle = "設計などから自分で考えた作品"
     works = [
         new baseWorkData({
