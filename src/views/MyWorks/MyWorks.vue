@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="heading">
-      <p>{{ works.pageTitle }}</p>
+      <p>{{ pageTitle }}</p>
     </div>
     <div class="cardGroup">
       <!-- vue2なのでこの書き方 -->
-      <template v-for="(element, index) of works.works">
+      <template v-for="(element, index) of works">
         <work-card-component :work="element" :key="index"></work-card-component>
       </template>
     </div>
@@ -14,15 +14,15 @@
 
 <script>
 import WorkCardComponent from "@/components/WorkCardComponent.vue";
-import { MyWorksOriginalWorks } from "@/datas/MyWorksOriginalWorks.js";
+import * as originalWorks from "@/datas/MyWorksOriginalWorks.js";
 export default {
   name: "MyWorks",
   components: { WorkCardComponent },
   data() {
     return {
       // 初期値はoriginal
-      // works.worksとなってややこしいためもっと適切な変数を探す｡
-      works: new MyWorksOriginalWorks(),
+      pageTitle: originalWorks.pageTitle,
+      works: originalWorks.works,
     };
   },
 };
