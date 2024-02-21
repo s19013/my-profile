@@ -1,56 +1,112 @@
 <template>
   <div>
-    <menu-list-component
-      class="menuComponent"
-      :list="menuList.MyWorksList"
-      :fontSize="menuList.MyWorksListFontSize"
-    ></menu-list-component>
-    <router-view></router-view>
+    <div class="menuComponent">
+      <button
+        @click="
+          setData(originalWorks);
+          setNowShowing('original');
+        "
+        :class="{ active: nowShowing == 'original' }"
+        :disabled="nowShowing == 'original'"
+      >
+        <!-- ↑余分な切り替えしないようにすでにアクティブな場合は押せないようにする -->
+        オリジナル
+      </button>
+      <button
+        @click="
+          setData(sampleWorks);
+          setNowShowing('sample');
+        "
+        :class="{ active: nowShowing == 'sample' }"
+        :disabled="nowShowing == 'sample'"
+      >
+        サンプル
+      </button>
+    </div>
+    <div class="heading">
+      <p>{{ data.pageTitle }}</p>
+    </div>
+    <div class="cardGroup">
+      <!-- vue2なのでこの書き方 -->
+      <template v-for="(element, index) of data.works">
+        <work-card-component :work="element" :key="index"></work-card-component>
+      </template>
+    </div>
   </div>
 </template>
 
 <script>
-import MenuListComponent from "@/components/MenuListComponent.vue";
+import WorkCardComponent from "@/components/WorkCardComponent.vue";
+import OriginalWorks from "@/datas/OriginalWorks.js";
+import SampleWorks from "@/datas/SampleWorks.js";
 
-// Appでも呼び出して､ここでも呼び出すって無駄?props使うべき?
-import { MenuListData } from "@/datas/MenuListData";
 export default {
   name: "MyWorks",
-  components: {
-    MenuListComponent,
-  },
+  components: { WorkCardComponent },
   data() {
     return {
-      menuList: new MenuListData(),
+      // 初期値はoriginal
+      // dataは安直すぎた?
+      originalWorks: new OriginalWorks(),
+      sampleWorks: new SampleWorks(),
+      data: new OriginalWorks(), // この中ではすぐにthis.originalWorksとしていできない｡mountedでいれるのも面倒
+      nowShowing: "original",
     };
+  },
+  methods: {
+    setData(arg) {
+      this.data = arg;
+    },
+    setNowShowing(arg) {
+      this.nowShowing = arg;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 951px) {
-  .workCard {
-    width: 25vw;
-    margin: 1rem;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 950px) {
-  .workCard {
-    width: 42vw;
-    margin: 2vh 2vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .workCard {
+.workCard {
+  width: 49%;
+  @media (max-width: 450px) {
     width: 100%;
-    margin: 5vh 0;
+  }
+}
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media (max-width: 450px) {
+    gap: 2rem;
+  }
+}
+
+.heading {
+  border-bottom: 1px solid black;
+  margin: 1rem 0;
+  p {
+    margin: 1rem 0;
   }
 }
 .menuComponent {
   display: flex;
   justify-content: center;
-  padding: 1vh 0 0 0;
+  gap: 1rem;
+
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  @media (max-width: 450px) {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0 0.5rem;
+  }
+  .active {
+    background-color: #112d4e;
+    color: #f9f7f7;
+    font-weight: bold;
+  }
 }
 </style>

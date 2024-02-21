@@ -13,20 +13,6 @@ const routes = [
   {
     path: "/MyWorks",
     component: () => import('../views/MyWorks/MyWorks.vue'),
-    children:[
-        {
-            path:'Original',
-            component: () => import('../views/MyWorks/Original.vue')
-        },
-        {
-            path:'Samples',
-            component: () => import('../views/MyWorks/Samples.vue')
-        },
-        {
-          path:'',
-          redirect:'/MyWorks/Original'
-        },
-    ]
   },
   {
     path: "/FQA",
