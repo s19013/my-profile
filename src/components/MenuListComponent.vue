@@ -25,15 +25,16 @@ export default {
   display: flex;
 }
 .router-link {
-  margin: 0 1rem;
+  display: inline-block;
+  width: 9rem;
   font-size: 1.5rem;
+  text-align: center;
   @media (max-width: 450px) {
-    margin: 0 0.5rem;
+    width: 6rem;
     font-size: 1rem;
   }
 }
 a {
-  padding: 0 0.5rem;
   color: black;
   text-decoration: none;
 }
