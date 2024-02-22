@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="tags">
-      <template v-for="(label, index) of labels">
+      <template v-for="label of labels">
         <button
-          :key="index"
+          :key="label"
           @click="
             filter(label);
             setNowShowing(label);
