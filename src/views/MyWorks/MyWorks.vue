@@ -91,17 +91,16 @@ export default {
 .menuComponent {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  @media (max-width: 450px) {
-    margin: 0 0.5rem;
-    font-size: 1rem;
-  }
 
   button {
-    padding: 0 0.5rem;
+    display: inline-block;
+    width: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    @media (max-width: 450px) {
+      width: 6rem;
+      font-size: 1rem;
+    }
   }
   .active {
     background-color: #112d4e;
