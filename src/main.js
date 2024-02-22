@@ -7,17 +7,22 @@ import vuetify from './plugins/vuetify'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+import { faNoteSticky } from '@fortawesome/free-solid-svg-icons'
+
+
 library.add(
   faArrowUpRightFromSquare,
   faCircleQuestion,
   faCode,
   faAddressCard,
   faGamepad,
+  faNoteSticky,
   )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
