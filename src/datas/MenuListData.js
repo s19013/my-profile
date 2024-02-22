@@ -7,6 +7,11 @@ export class MenuListData{
                 icon :"fa-solid fa-address-card",
             },
             {
+                to   :"/Article",
+                title:"記事",
+                icon :"fa-solid fa-note-sticky",
+            },
+            {
                 to   :"/MyWorks",
                 title:"作品",
                 icon :"fa-solid fa-code",
