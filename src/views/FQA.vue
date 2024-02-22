@@ -1,25 +1,20 @@
 <template>
   <div>
-    <v-row>
-      <v-btn-toggle
-        color="deep-purple accent-3"
-        class="tags"
-        v-model="toggle_exclusive"
-        mandatory
-      >
-        <v-btn value="すべて" class="v-btn" @click="filter(null)">すべて</v-btn>
-        <v-btn value="技術" class="v-btn" @click="filter('技術')">技術</v-btn>
-        <v-btn value="興味" class="v-btn" @click="filter('興味')"
-          >興味/関心</v-btn
+    <div class="tags">
+      <template v-for="label of labels">
+        <button
+          :key="label"
+          @click="
+            filter(label);
+            setNowShowing(label);
+          "
+          :class="{ active: nowShowing == label }"
+          :disabled="nowShowing == label"
         >
-        <v-btn value="性格" class="v-btn" @click="filter('性格')">性格</v-btn>
-        <v-btn value="考え" class="v-btn" @click="filter('考え')">考え</v-btn>
-        <v-btn value="過去" class="v-btn" @click="filter('過去')">過去</v-btn>
-        <v-btn value="その他" class="v-btn" @click="filter('その他')"
-          >その他</v-btn
-        >
-      </v-btn-toggle>
-    </v-row>
+          {{ label }}
+        </button>
+      </template>
+    </div>
 
     <div v-for="element of QAList" :key="element.Q">
       <q-a-component :data="element"> </q-a-component>
@@ -37,17 +32,17 @@ export default {
   },
   data() {
     return {
+      labels: ["すべて", "技術", "興味/関心", "性格", "過去", "その他"],
       QA: new QAData(),
       QAList: null,
-      //トグル管理
-      toggle_exclusive: undefined,
+      nowShowing: "すべて",
     };
   },
   methods: {
     filter(arg = null) {
       // 引数が空の時
       // すべて表示する
-      if (arg == null) {
+      if (arg == "すべて") {
         return (this.QAList = this.QA.list);
       }
 
@@ -60,27 +55,43 @@ export default {
       }
       return (this.QAList = List);
     },
+    setNowShowing(arg) {
+      this.nowShowing = arg;
+    },
   },
   mounted() {
-    this.filter(null);
+    this.filter("すべて");
   },
 };
 </script>
 
 <style lang="scss">
 .tags {
+  display: flex;
   flex-wrap: wrap;
-  margin: 1rem auto;
+  margin: 1rem 0;
+  width: 100%;
   button {
-    width: 10rem;
-    @media (max-width: 450px) {
-      width: 25vw;
+    font-size: 1.2rem;
+    background-color: #ebeef0;
+    color: #000000;
+    border: 1px solid black;
+    @media (min-width: 481px) {
+      flex: 1;
+      min-width: 0;
+      box-sizing: border-box;
     }
+    @media (max-width: 480px) {
+      width: 25%;
+    }
+  }
+  .active {
+    background-color: #112d4e;
+    color: #f9f7f7;
+    font-weight: bold;
   }
 }
 .QA {
   margin: 0.5rem 0;
 }
 </style>
-<!-- align="center"
-justify="center" -->

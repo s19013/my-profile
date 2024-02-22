@@ -49,7 +49,7 @@ export default {
       // dataは安直すぎた?
       originalWorks: new OriginalWorks(),
       sampleWorks: new SampleWorks(),
-      data: new OriginalWorks(), // この中ではすぐにthis.originalWorksとしていできない｡mountedでいれるのも面倒
+      data: null,
       nowShowing: "original",
     };
   },
@@ -61,13 +61,16 @@ export default {
       this.nowShowing = arg;
     },
   },
+  mounted() {
+    this.data = this.originalWorks;
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .workCard {
   width: 49%;
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     width: 100%;
   }
 }
@@ -76,7 +79,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     gap: 2rem;
   }
 }
@@ -97,7 +100,7 @@ export default {
     width: 8rem;
     font-size: 1.2rem;
     text-align: center;
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
       width: 6rem;
       font-size: 1rem;
     }

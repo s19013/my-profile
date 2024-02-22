@@ -2,7 +2,7 @@ export class QAData{
     constructor() {
         this.list =[
             {
-                tag:["技術","興味"],
+                tag:["技術","興味/関心"],
                 Q:"興味がある､今後触ってみたい技術や分野は?",
                 A: `
 * nginx
@@ -33,7 +33,7 @@ export class QAData{
                 `
             },
             {
-                tag:["技術","興味"],
+                tag:["技術","興味/関心"],
                 Q:"今後作ってみたいもの,技術的にやってみたいことは?",
                 A:`
 * (達成)~~laravelとvueを組み合わせたwebサービス~~
@@ -51,7 +51,7 @@ export class QAData{
                 `
             },
             {
-                tag:["興味"],
+                tag:["興味/関心"],
                 Q:"技術以外にやってみたいことなどは?",
                 A:`
 * ハックバーに行ってみたい
