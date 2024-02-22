@@ -23,17 +23,5 @@ export class MenuListData{
             //     icon :"fa-gamepad",
             // }
         ]
-        //-----------------------------
-        this.MyWorksList = [
-            {
-                to   :"Original",
-                title:"オリジナル"
-            },
-            {
-                to   :"Samples",
-                title:"サンプル"
-            }
-        ]
-        this.MyWorksListFontSize = "1.4vw"
     }
 }
