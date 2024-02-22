@@ -49,7 +49,7 @@ export default {
       // dataは安直すぎた?
       originalWorks: new OriginalWorks(),
       sampleWorks: new SampleWorks(),
-      data: new OriginalWorks(), // この中ではすぐにthis.originalWorksとしていできない｡mountedでいれるのも面倒
+      data: null,
       nowShowing: "original",
     };
   },
@@ -60,6 +60,9 @@ export default {
     setNowShowing(arg) {
       this.nowShowing = arg;
     },
+  },
+  mounted() {
+    this.data = this.originalWorks;
   },
 };
 </script>
