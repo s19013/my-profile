@@ -29,7 +29,7 @@ export default {
   width: 9rem;
   font-size: 1.5rem;
   text-align: center;
-  @media (max-width: 450px) {
+  @media (max-width: 480px) {
     width: 6rem;
     font-size: 1rem;
   }

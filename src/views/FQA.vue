@@ -76,12 +76,12 @@ export default {
     background-color: #ebeef0;
     color: #000000;
     border: 1px solid black;
-    @media (min-width: 451px) {
+    @media (min-width: 481px) {
       flex: 1;
       min-width: 0;
       box-sizing: border-box;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
       width: 25%;
     }
   }
