@@ -1,5 +1,17 @@
 <template>
   <div>
+    <p>いくつかピックアップしました｡</p>
+    <p class="caution">
+      ※qiita
+      apiを使っており何度も再読み込みすると制限がかかり記事が表示されない場合がございます｡
+    </p>
+    <div class="iconInfomation">
+      <p><font-awesome-icon icon="fa-regular fa-comment" />:コメント数</p>
+      <p><font-awesome-icon icon="fa-regular fa-heart" />:いいね数</p>
+      <p><font-awesome-icon icon="fa-brands fa-get-pocket" />:ストック数</p>
+      <p><font-awesome-icon icon="fa-regular fa-eye" />:閲覧数</p>
+    </div>
+
     <template v-for="article of articleData.articles">
       <ArticleComponent
         :article="article"
@@ -25,4 +37,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.caution {
+  color: rgb(163, 0, 0);
+  font-weight: bolder;
+}
+.iconInfomation {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+</style>
