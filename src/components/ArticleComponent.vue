@@ -8,8 +8,9 @@
         <p :key="index">{{ row }}</p>
       </template>
     </div>
-    <p class="created_at">created_at:{{ dateFormat(article.created_at) }}</p>
-    <div class="counts">
+
+    <div class="otherInfo">
+      <p class="created_at">created_at:{{ dateFormat(article.created_at) }}</p>
       <p>
         <font-awesome-icon icon="fa-regular fa-comment" />:{{
           article.comments_count
@@ -66,13 +67,14 @@ h2 {
 .comment {
   margin-top: 0.5rem;
 }
-.created_at {
-  text-align: end;
-}
-.counts {
+.otherInfo {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
+  .created_at {
+    margin-right: 0.5rem;
+  }
 }
 </style>
