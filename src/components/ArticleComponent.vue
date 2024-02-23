@@ -1,6 +1,6 @@
 <template>
   <div class="article">
-    <a :href="article.url">
+    <a :href="article.url" target="_blank" rel="noopener noreferrer">
       <h2 class="Title">{{ article.title }}</h2>
     </a>
     <div class="comment">
