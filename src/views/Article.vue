@@ -56,6 +56,20 @@ export default {
   },
   created() {
     this.fetchQiitaDatas();
+
+    // デバック用のテストデータ
+    // this.articles.push({
+    //   response: {
+    //     url: "testurl",
+    //     title: "testtitle",
+    //     created_at: "2022-01-01T00",
+    //     comments_count: 0,
+    //     likes_count: 0,
+    //     stocks_count: 0,
+    //     page_views_count: 0,
+    //   },
+    //   comment: ["test comment"],
+    // });
   },
 };
 </script>
