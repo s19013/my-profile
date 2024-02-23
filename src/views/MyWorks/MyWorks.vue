@@ -61,7 +61,7 @@ export default {
       this.nowShowing = arg;
     },
   },
-  mounted() {
+  created() {
     this.data = this.originalWorks;
   },
 };
