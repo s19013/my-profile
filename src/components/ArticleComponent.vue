@@ -1,7 +1,7 @@
 <template>
   <div class="article">
     <a :href="article.url">
-      <h3 class="Title">{{ article.title }}</h3>
+      <h2 class="Title">{{ article.title }}</h2>
     </a>
     <div class="comment">
       <template v-for="(row, index) of article.comment">
@@ -39,6 +39,10 @@ export default {
 .article {
   border: 1px solid black;
   padding: 1rem;
+  background-color: rgb(227, 227, 227);
+}
+h2 {
+  border-bottom: 1px solid black;
 }
 .comment {
   margin-top: 0.5rem;
