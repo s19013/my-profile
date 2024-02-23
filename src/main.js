@@ -14,6 +14,10 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 import { faNoteSticky } from '@fortawesome/free-solid-svg-icons'
+import { faComment } from '@fortawesome/free-regular-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
+import {faGetPocket} from '@fortawesome/free-brands-svg-icons'
 
 
 library.add(
@@ -23,6 +27,10 @@ library.add(
   faAddressCard,
   faGamepad,
   faNoteSticky,
+  faComment,
+  faHeart,
+  faEye,
+  faGetPocket
   )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
