@@ -4,16 +4,32 @@
       <h2 class="Title">{{ article.title }}</h2>
     </a>
     <div class="comment">
-      <template v-for="(row, index) of article.comment">
+      <template v-for="(row, index) of comment">
         <p :key="index">{{ row }}</p>
       </template>
     </div>
-    <p class="created_at">created_at:{{ date() }}</p>
+    <p class="created_at">created_at:{{ dateFormat(article.created_at) }}</p>
     <div class="counts">
-      <p><font-awesome-icon icon="fa-regular fa-comment" />111</p>
-      <p><font-awesome-icon icon="fa-regular fa-heart" />111</p>
-      <p><font-awesome-icon icon="fa-brands fa-get-pocket" />111</p>
-      <p><font-awesome-icon icon="fa-regular fa-eye" />111</p>
+      <p>
+        <font-awesome-icon icon="fa-regular fa-comment" />:{{
+          article.comments_count
+        }}
+      </p>
+      <p>
+        <font-awesome-icon icon="fa-regular fa-heart" />:{{
+          article.likes_count
+        }}
+      </p>
+      <p>
+        <font-awesome-icon icon="fa-brands fa-get-pocket" />:{{
+          article.stocks_count
+        }}
+      </p>
+      <p>
+        <font-awesome-icon icon="fa-regular fa-eye" />:{{
+          article.page_views_count
+        }}
+      </p>
     </div>
   </div>
 </template>
@@ -25,9 +41,12 @@ export default {
       type: Object,
       required: true,
     },
+    comment: {
+      type: Array,
+    },
   },
   methods: {
-    date(arg = "2000-01-01T00:00:00+00:00") {
+    dateFormat(arg) {
       // Tより前の文字列たちを返す
       return arg.match(/^.*(?=T)/)[0];
     },
