@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
 import vuetify from './plugins/vuetify'
+import store from './store'
 
 //fontawasome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -38,6 +39,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 new Vue({
+  store,
   vuetify,
   router,
   render: h => h(App)
