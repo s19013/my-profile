@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>いくつかピックアップしました｡</p>
     <p class="caution">
       ※qiita
       apiを使っており何度も再読み込みすると制限がかかり記事が表示されない場合がございます｡
@@ -19,6 +18,17 @@
         :key="article.url"
       ></ArticleComponent>
     </template>
+
+    <p>これらはいくつかピックアップしたものです｡</p>
+    <p>
+      もし､もっと見たいと思ってくださいましたら
+      <a
+        href="https://qiita.com/hideya670"
+        target="_blank"
+        rel="noopener noreferrer"
+        >こちらをどうぞ</a
+      >
+    </p>
   </div>
 </template>
 
