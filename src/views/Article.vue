@@ -58,6 +58,11 @@ export default {
             response: response.data,
             comment: articleData.comment,
           });
+          // キャッシュも保存する
+          this.$store.commit("setArticleCache", {
+            response: response.data,
+            comment: articleData.comment,
+          });
         } catch (error) {
           console.error(error);
         }
@@ -65,7 +70,14 @@ export default {
     },
   },
   created() {
-    this.fetchQiitaDatas();
+    if (this.$store.getters.haveCache) {
+      // キャッシュを代入
+      this.articles = this.$store.state.articles;
+    } else {
+      // キャッシュが無い時だけapi通信をする
+      this.fetchQiitaDatas();
+    }
+
     // デバック用のテストデータ
     // this.articles.push({
     //   response: {
