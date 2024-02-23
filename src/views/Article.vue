@@ -56,7 +56,6 @@ export default {
   },
   created() {
     this.fetchQiitaDatas();
-
     // デバック用のテストデータ
     // this.articles.push({
     //   response: {
@@ -84,5 +83,8 @@ export default {
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+.article {
+  margin-bottom: 0.5rem;
 }
 </style>
