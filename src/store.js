@@ -5,12 +5,18 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        articleCache:[]
+        articles:[]
+    },
+    getters:{
+        haveCache:function(state){
+            if (state.articles.length > 0) { return true }
+            return false
+        }
     },
     mutations: {
         setArticleCache:function(state,article){
-            state.articleCache.push(article)
-        }
+            state.articles.push(article)
+        },
     },
     actions: {
     },
