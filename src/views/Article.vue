@@ -14,7 +14,8 @@
 
     <template v-for="article of articles">
       <ArticleComponent
-        :article="article"
+        :article="article.response"
+        :comment="article.comment"
         :key="article.url"
       ></ArticleComponent>
     </template>
@@ -36,24 +37,21 @@ export default {
     };
   },
   methods: {
+    // qiitaから指定したデータ達を取ってくる
     async fetchQiitaDatas() {
       const baseUrl = "https://qiita.com/api/v2/items";
       const baseArticleData = new ArticleData();
       for (const articleData of baseArticleData.articles) {
-        const url = `${baseUrl}/${articleData.id}`;
         try {
-          const response = await axios.get(url);
-          console.log(response.data);
+          const response = await axios.get(`${baseUrl}/${articleData.id}`);
           this.articles.push({
-            article: response.data,
+            response: response.data,
             comment: articleData.comment,
           });
         } catch (error) {
           console.error(error);
         }
       }
-
-      console.log(this.articles);
     },
   },
   created() {
