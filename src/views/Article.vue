@@ -12,7 +12,7 @@
       <p><font-awesome-icon icon="fa-regular fa-eye" />:閲覧数</p>
     </div>
 
-    <template v-for="article of articleData.articles">
+    <template v-for="article of articles">
       <ArticleComponent
         :article="article"
         :key="article.url"
@@ -24,6 +24,7 @@
 <script>
 import ArticleComponent from "@/components/ArticleComponent.vue";
 import ArticleData from "@/datas/ArticleData";
+const axios = require("axios");
 export default {
   name: "ArticleView",
   components: {
@@ -31,8 +32,32 @@ export default {
   },
   data() {
     return {
-      articleData: new ArticleData(),
+      articles: [],
     };
+  },
+  methods: {
+    async fetchQiitaDatas() {
+      const baseUrl = "https://qiita.com/api/v2/items";
+      const baseArticleData = new ArticleData();
+      for (const articleData of baseArticleData.articles) {
+        const url = `${baseUrl}/${articleData.id}`;
+        try {
+          const response = await axios.get(url);
+          console.log(response.data);
+          this.articles.push({
+            article: response.data,
+            comment: articleData.comment,
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      console.log(this.articles);
+    },
+  },
+  created() {
+    this.fetchQiitaDatas();
   },
 };
 </script>
