@@ -61,26 +61,27 @@ export default {
       this.nowShowing = arg;
     },
   },
-  mounted() {
+  created() {
     this.data = this.originalWorks;
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.workCard {
-  width: 49%;
-  @media (max-width: 480px) {
-    width: 100%;
-  }
-}
-
 .cardGroup {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 1rem;
   @media (max-width: 480px) {
     gap: 2rem;
+  }
+}
+.workCard {
+  width: 45%;
+  box-sizing: border-box;
+  @media (max-width: 600px) {
+    width: 100%;
   }
 }
 
