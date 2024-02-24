@@ -81,13 +81,10 @@ laravelの練習として作りました
         new baseWorkData({
             imgUrl:"originalWorks/my-profile.png",
             title :"自己紹介サイト",
-            readmeUrl:"https://github.com/s19013/my-profile#readme",
-            codeUrl:"https://github.com/s19013/my-profile",
-            workUrl:"https://s19013.github.io/my-profile/Home",
             used:["javascript","Vue.js","html","css"],
             comment:`
 このサイトです｡  
-vue Routerの練習と自己開示のため､カジュアル面談での話の種になればと思いつくりました`
+vue,vue Routerの練習と自己開示のため､カジュアル面談での話の種になればと思いつくりました`
             }),
     ]
 }
