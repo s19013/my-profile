@@ -46,7 +46,7 @@
     <div v-if="work.comment !== null">
       <!--  -->
       <v-card-actions @click="show = !show">
-        <p>軽いコメント</p>
+        <p>コメント</p>
 
         <v-spacer></v-spacer>
 
