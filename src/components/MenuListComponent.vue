@@ -23,6 +23,7 @@ export default {
 .menu {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .router-link {
   display: inline-block;
@@ -32,6 +33,7 @@ export default {
   @media (max-width: 480px) {
     width: 6rem;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 a {
