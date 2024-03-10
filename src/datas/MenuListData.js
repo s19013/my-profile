@@ -7,6 +7,11 @@ export class MenuListData{
                 icon :"fa-solid fa-address-card",
             },
             {
+                to   :"/Skill",
+                title:"スキル",
+                icon :null,
+            },
+            {
                 to   :"/Article",
                 title:"記事",
                 icon :"fa-solid fa-note-sticky",
