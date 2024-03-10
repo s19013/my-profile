@@ -1,8 +1,8 @@
 <template>
   <div>
     <p class="lastUpdated">最終更新日:2023/07/24</p>
-    <name-component :name="homeData.name" class="name-component">
-    </name-component>
+    <nick-name-component :nickName="homeData.nickName" class="name-component">
+    </nick-name-component>
 
     <date-of-birth-component
       :birthDay="homeData.birthDay"
@@ -13,7 +13,7 @@
     <link-component :linkList="homeData.linkList"> </link-component>
 
     <!-- 学歴､職歴 -->
-    <div class="career">
+    <!-- <div class="career">
       <div @click="showCareerList = !showCareerList">
         学歴､職歴
         <v-btn icon>
@@ -29,7 +29,7 @@
           </history-component>
         </div>
       </v-expand-transition>
-    </div>
+    </div> -->
     <!--  -->
 
     <!-- 資格名 -->
@@ -92,7 +92,7 @@
 
 <script>
 // コンポーネント
-import NameComponent from "../components/home/NameComponent.vue";
+import NickNameComponent from "../components/home/NickName.vue";
 import DateOfBirthComponent from "../components/home/DateOfBirthComponent.vue";
 import LinkComponent from "../components/home/LinkComponent.vue";
 import HistoryComponent from "../components/home/HistoryComponent.vue";
@@ -103,7 +103,7 @@ import { HomeData } from "../datas/HomeData.js";
 export default {
   name: "HomeView",
   components: {
-    NameComponent,
+    NickNameComponent,
     DateOfBirthComponent,
     LinkComponent,
     HistoryComponent,
