@@ -10,3 +10,6 @@ github pagesでブラウザの再読み込みをすると404が表示される
 -> vue-routerをhistoryモードにしてたのが原因､とにかくhistoryモードの仕様とgithub pagesの仕様が合わさりこのようなことになってしまった｡  
 -> hashモードに変更することで解決した
 
+# 今後
+練習としてvue2からvue3にアップグレードする｡  
+練習としてwebpackからviteに変更する  
