@@ -10,6 +10,36 @@
     >
     </date-of-birth-component>
 
+    <div class="self-introduction">
+      <p>こんにちは､私のプロフィールにアクセスいただきありがとうございます｡</p>
+      <p>私は､ITの専門学校を卒業をした既卒の人間です｡</p>
+      <p>
+        学校ではsql,linuxコマンド,python文法,kotlin文法,html基礎,css基礎,アルゴリズムなどを学んだほか｡資格獲得へ向けた授業を受けました｡
+        pythonのTikinterを使った作品作りやandroidのサンプルアプリ作成などもしました｡
+      </p>
+      <p>
+        卒業制作では、アンドロイドアプリのゲームを作り、ゲームのコンピューターの作成やストアへの出品に挑戦し
+        ました。
+      </p>
+      <p>
+        今現在は､php,laravel,javascript,vue.jsを中心に勉強して何か作ったり､カンファレンスへの参加｡
+        勉強会への参加､及び登壇をしたりしております｡
+      </p>
+      <p>
+        他には､技術書やそれ以外の本を読んだりたまにqiitaを書いております｡
+        laravelとvue.jsを組み合わせたアプリを開発し､運用しております｡
+        vue.jsとjavascriptでテトリスを作ってみたりもしました｡
+      </p>
+      <p>
+        業務外では趣味, 個人開発,
+        勉強,休息をしっかり取ることなどを大切にしたいので、休むことや､プライベートを大事にすることに対して肯定的な会社を探しております｡
+      </p>
+      <p>
+        実務未経験故経験不足でまだまだ学ぶべきことがあると思います｡
+        こんな私でもよろしければ､お声がけいただけると嬉しいです｡
+      </p>
+    </div>
+
     <link-component :linkList="homeData.linkList"> </link-component>
 
     <!-- 学歴､職歴 -->
@@ -126,6 +156,9 @@ export default {
 </script>
 
 <style lang="scss">
+.self-introduction {
+  margin: 2rem;
+}
 .lastUpdated {
   font-size: 1rem;
   text-align: right;
