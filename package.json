@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "preBuild":"node scripts/autoUpdateDateWriter.js",
-    "build": "npm run prebuild && vue-cli-service build",
+    "build": "npm run preBuild && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
