@@ -44,6 +44,12 @@ export default class ArticleData {
                 "共通化で何度か困ったことがあったので調べたり､知り合いのエンジニアに質問したものをまとめたもの"
             ]
         },
+        {
+            id:"2e31ef2bab3d897b3b67",
+            comment:[
+                "dockerでvueの環境構築に苦戦したのでメモを残した"
+            ]
+        },
         // {
         //     id:null,
         //     comment:[]
