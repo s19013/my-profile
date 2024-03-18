@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="lastUpdated">最終更新日:2024/03/11</p>
+    <p class="lastUpdated">最終更新日:2024-03-18</p>
     <nick-name-component :nickName="homeData.nickName" class="name-component">
     </nick-name-component>
 
