@@ -11,6 +11,13 @@ export default class ArticleData {
             id:"8a1e3fc31bf4611550a8",
             comment:["最初期とこの記事を書いた当時のデータベースの構造を比較して何をどうして変化させたのかを説明"]
         },
+        // --- ↑おすすめをわざと上に
+        {
+            id:"2e31ef2bab3d897b3b67",
+            comment:[
+                "dockerでvueの環境構築に苦戦したのでメモを残した"
+            ]
+        },
         {
             id:"7f9030997830aef447cf",
             comment:[
@@ -42,12 +49,6 @@ export default class ArticleData {
             id:"751f6a482bdce1f21bbe",
             comment:[
                 "共通化で何度か困ったことがあったので調べたり､知り合いのエンジニアに質問したものをまとめたもの"
-            ]
-        },
-        {
-            id:"2e31ef2bab3d897b3b67",
-            comment:[
-                "dockerでvueの環境構築に苦戦したのでメモを残した"
             ]
         },
         // {
