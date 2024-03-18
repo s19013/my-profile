@@ -42,6 +42,8 @@ const routes = [
   }
 ]
 
+// ネットの情報とかと違うのはvue2だからか?
+// vue3からはcreateRouterらしい
 const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
